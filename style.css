@@ -378,3 +378,8 @@ body {
     transition: opacity 400ms;
     transition-delay: 0ms;
   }
+
+  .reservation-logo {
+    width: 50;
+    height: 40;
+  }
