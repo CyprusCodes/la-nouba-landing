@@ -48,6 +48,7 @@
     !function (e, a, t) { var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d"); function s(e, t) { p.clearRect(0, 0, i.width, i.height), p.fillText(e, 0, 0); e = i.toDataURL(); return p.clearRect(0, 0, i.width, i.height), p.fillText(t, 0, 0), e === i.toDataURL() } function c(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (o = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)t.supports[o[r]] = function (e) { if (p && p.fillText) switch (p.textBaseline = "top", p.font = "600 32px Arial", e) { case "flag": return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !s("\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff") }return !1 }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji))) }(window, document, window._wpemojiSettings);
   </script>
 
+<link rel="stylesheet" type="text/css" href="./custom.css">
   <link rel="stylesheet" type="text/css" href="./style.css">
 
   <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min3781.css?ver=6.2.2'
@@ -181,10 +182,15 @@
 
   <div id="loader" class="loader test">
     <div class="loader_logo">
-      <img alt="Logo Spirito"
-        data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/logo-spirito-colors.svg" class="lazyload"
-        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-          src="wp-content/uploads/2022/09/logo-spirito-colors.svg" alt="Logo Spirito"></noscript>
+      <div id="badge-reservation" data-bs-toggle="modal" data-bs-target="#reservationModal">
+    <div class="mb-2">
+      <img alt="" data-src="./wp-content//uploads/2022/09/Logo.png" class="lazy lazyload w-100 h-75 mb-2"
+        src="./wp-content//uploads/2022/09/Logo.png">
+    </div>
+    <div class="text">
+      <img class="lazy" src="./wp-content/uploads/2022/09/Rezervasyon.png" alt="">
+    </div>
+  </div>
     </div>
   </div>
   <div id="backdrop"></div>
@@ -813,7 +819,7 @@
                     alt=""></noscript></noscript></noscript>
           </div>
         </div>
-        <div class="section__header devio__animate" data-animate="fade-image">
+        <!-- <div class="section__header devio__animate" data-animate="fade-image">
           <div class="title">
             <h2>À ne pas manquer</h2>
           </div>
@@ -826,7 +832,7 @@
         <div class="buttons devio__animate" data-animate="fade-image">
           <a href="https://www.facebook.com/spiritobrussels.be/events/?ref=page_internal" target="_blank">Voir la
             programmation<span class="icon"><i class="fal fa-chevron-right"></i></span></a>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -835,10 +841,10 @@
         <div class="title">
           <h2>Etkinlikler</h2>
         </div>
-        <div class="text">
+        <!-- <div class="text">
           <p>Vous désirez vivre une expérience exclusive et personnelle ? N’hésitez pas à contacter notre équipe. Nous
             vous conseillerons sur les meilleurs possibilités en fonction de vos envies.</p>
-        </div>
+        </div> -->
       </div>
       <div class="zones__container devio__animate" data-animate="fade-image">
         <div class="overlay">
@@ -859,21 +865,21 @@
             <div class="zone" data-zone="Dancefloor" data-title="Abdess"
               data-image="wp-content/uploads/2022/07/unnamed-2-1.png">
               <div class="zone__header">
-                <img data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-980x653.jpg"
-                  data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-980x653.jpg 980w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-1024x683.jpg 1024w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-768x512.jpg 768w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-1536x1024.jpg 1536w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-1440x960.jpg 1440w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29.jpg 2048w"
-                  data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-980x653.jpg"
+                <img src="./assets/Events 1.png" alt="" class="lazy lazyload" data-sizes="(max-width: 850px) 100vw, 850px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                <!-- <img 
+                  data-srcset="./assets/tion-wayne.png 980w, ./assets/tion-wayne.png 300w, ./assets/tion-wayne.png 1024w, ./assets/tion-wayne.png 768w, ./assets/tion-wayne.png 1536w, ./assets/tion-wayne.png 1440w, ./assets/tion-wayne.png 550w, ./assets/tion-wayne.png 2048w"
+                  
                   data-sizes="(max-width: 850px) 100vw, 850px" class="lazy lazyload"
                   src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
                     class="lazy"
-                    data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-980x653.jpg"
-                    src="wp-content/uploads/2022/09/WannabeIG-29-980x653.jpg"
-                    srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-980x653.jpg 980w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-1024x683.jpg 1024w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-768x512.jpg 768w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-1536x1024.jpg 1536w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-1440x960.jpg 1440w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/WannabeIG-29.jpg 2048w"
-                    sizes="(max-width: 850px) 100vw, 850px" /></noscript>
+                    src="./assets/Events 4.png"
+                    sizes="(max-width: 850px) 100vw, 850px" /></noscript> -->
               </div>
             </div>
             <div class="zone" data-zone="Dancefloor" data-title="Jon" data-image="wp-content/uploads/2022/07/jon.png">
               <div class="zone__header">
-                <img data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-980x653.jpg"
+                <img src="./assets/Events 2.png" alt="" class="lazy lazyload" data-sizes="(max-width: 850px) 100vw, 850px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                <!-- <img data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-980x653.jpg"
                   data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-980x653.jpg 980w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-1024x683.jpg 1024w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-768x512.jpg 768w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-1536x1024.jpg 1536w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-1440x960.jpg 1440w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17.jpg 2048w"
                   data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-980x653.jpg"
                   data-sizes="(max-width: 850px) 100vw, 850px" class="lazy lazyload"
@@ -882,13 +888,14 @@
                     data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-980x653.jpg"
                     src="wp-content/uploads/2022/09/Amazonia_ig-17-980x653.jpg"
                     srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-980x653.jpg 980w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-1024x683.jpg 1024w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-768x512.jpg 768w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-1536x1024.jpg 1536w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-1440x960.jpg 1440w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Amazonia_ig-17.jpg 2048w"
-                    sizes="(max-width: 850px) 100vw, 850px" /></noscript>
+                    sizes="(max-width: 850px) 100vw, 850px" /></noscript> -->
               </div>
             </div>
             <div class="zone" data-zone="Floor" data-title="Matheus"
               data-image="wp-content/uploads/2022/07/unnamed-1.jpg">
               <div class="zone__header">
-                <img
+                <img src="./assets/Events 3.png" alt="" class="lazy lazyload" data-sizes="(max-width: 850px) 100vw, 850px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                <!-- <img
                   data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-980x653.jpg"
                   data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-980x653.jpg 980w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-1024x683.jpg 1024w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-768x512.jpg 768w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-1536x1024.jpg 1536w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-1440x960.jpg 1440w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021.jpg 2048w"
                   data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-980x653.jpg"
@@ -898,13 +905,14 @@
                     data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-980x653.jpg"
                     src="wp-content/uploads/2022/09/JR_closing_ig-021-980x653.jpg"
                     srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-980x653.jpg 980w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-1024x683.jpg 1024w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-768x512.jpg 768w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-1536x1024.jpg 1536w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-1440x960.jpg 1440w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_closing_ig-021.jpg 2048w"
-                    sizes="(max-width: 850px) 100vw, 850px" /></noscript>
+                    sizes="(max-width: 850px) 100vw, 850px" /></noscript> -->
               </div>
             </div>
             <div class="zone" data-zone="VIP" data-title="Nicolas"
               data-image="wp-content/uploads/2022/07/unnamed-1-1.jpg">
               <div class="zone__header">
-                <img data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-980x653.jpg"
+                <img src="./assets/Events 4.png" alt="" class="lazy lazyload" data-sizes="(max-width: 850px) 100vw, 850px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                <!-- <img data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-980x653.jpg"
                   data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-980x653.jpg 980w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-1024x683.jpg 1024w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-768x512.jpg 768w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-1536x1024.jpg 1536w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-1440x960.jpg 1440w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30.jpg 2048w"
                   data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-980x653.jpg"
                   data-sizes="(max-width: 850px) 100vw, 850px" class="lazy lazyload"
@@ -913,12 +921,12 @@
                     data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-980x653.jpg"
                     src="wp-content/uploads/2022/09/AmazoniaIG-30-980x653.jpg"
                     srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-980x653.jpg 980w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-1024x683.jpg 1024w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-768x512.jpg 768w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-1536x1024.jpg 1536w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-1440x960.jpg 1440w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/AmazoniaIG-30.jpg 2048w"
-                    sizes="(max-width: 850px) 100vw, 850px" /></noscript>
+                    sizes="(max-width: 850px) 100vw, 850px" /></noscript> -->
               </div>
             </div>
           </div>
         </div>
-        <div class="zone__title">
+        <!-- <div class="zone__title">
           <h4></h4>
         </div>
         <div class="zone__content">
@@ -931,38 +939,63 @@
               <img class="lazy" src="#" alt="">
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="buttons devio__animate" data-animate="fade-image">
-        <a href="zones/index.html">Tüm etkinlikler<span class="icon"><i class="fal fa-chevron-right"></i></span></a>
+        <a href="zones/index.html">REZERVASYON YAP<span class="icon"><i class="fal fa-chevron-right"></i></span></a>
       </div>
     </section>
 
-    <section id="home_section_4" class="home_section_4">
-      <div class="section__header">
-        <div class="title">
-          <h2>Ambiances</h2>
+    <section id="contact" class="contact gallery_title">
+      <div class="c__container__full full sm_full">
+        <div class="section__header">
+          <div class="title">
+            <h2>fotoğraflar</h2>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="home_section_4" class="home_section_4 gallery_title">
+      <div class="section__header">
         <div class="buttons">
           <a href="https://www.facebook.com/spiritobrussels.be/photos/?ref=page_internal" target="_blank">Galeriye
             gözat<span class="icon"><i class="fal fa-chevron-right"></i></span></a>
         </div>
       </div>
       <div class="slick__gallery devio__animate" data-animate="fade-image">
-        <div class="image">
+        <!-- <div class="image">
+          <h4>BORIS BREJCHA IN CONCERT | 2ND JUNE FRIDAY 2023 </h4>
           <img
-            data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-22-550x367.jpg"
-            data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-22-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-22-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-22.jpg 600w"
-            data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-22-550x367.jpg"
+            data-lazy="./assets/B-YOUNG-27.jpg"
+            data-srcset="./assets/B-YOUNG-27.jpg 550w, ./assets/B-YOUNG-27.jpg 300w, ./assets/B-YOUNG-27.jpg 600w"
+            data-src="./assets/B-YOUNG-27.jpg"
             data-sizes="(max-width: 450px) 100vw, 450px" class="lazy lazyload"
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
               class="lazy"
-              data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-22-550x367.jpg"
-              src="wp-content/uploads/2022/09/JR_10thAnniversaryIG-22-550x367.jpg"
-              srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-22-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-22-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-22.jpg 600w"
+              data-lazy="./assets/B-YOUNG-27.jpg"
+              src="./assets/B-YOUNG-27.jpg"
+              srcset="./assets/B-YOUNG-27.jpg 550w, ./assets/B-YOUNG-27.jpg 300w, ./assets/B-YOUNG-27.jpg 600w"
               sizes="(max-width: 450px) 100vw, 450px" /></noscript>
+        </div> -->
+        <div class="images_view">
+          <h1>lLA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
+          <img src="./assets/B-YOUNG-27.jpg" alt="" class="lazy">
         </div>
-        <div class="image">
+        <div class="images_view">
+          <h1>lLA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
+          <img src="./assets/yg_lanouba-22.jpg" alt="" class="lazy">
+        </div>
+        <div class="images_view">
+          <h1>lLA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
+          <img src="./assets/TION-WAYNE-21ST-AUGUST-SUNDAY-12.jpg" alt="" class="lazy">
+        </div>
+        <div class="images_view">
+          <h1>lLA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
+          <img src="./assets/yg_lanouba-10.jpg" alt="" class="lazy">
+        </div>
+        
+        <!-- <div class="image">
           <img
             data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64-550x367.jpg"
             data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64.jpg 600w"
@@ -998,8 +1031,8 @@
               src="wp-content/uploads/2022/09/JR_guilty_ig-30-550x367.jpg"
               srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30.jpg 600w"
               sizes="(max-width: 450px) 100vw, 450px" /></noscript>
-        </div>
-        <div class="image">
+        </div> -->
+        <!-- <div class="image">
           <img data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54-550x367.jpg"
             data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54.jpg 600w"
             data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54-550x367.jpg"
@@ -1046,9 +1079,50 @@
               src="wp-content/uploads/2022/09/JR_10thAnniversaryIG-20-550x367.jpg"
               srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20.jpg 600w"
               sizes="(max-width: 450px) 100vw, 450px" /></noscript>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="home_section_3" class="home_section_3 gallery_title">
+      <div class="section__header devio__animate" data-animate="fade-image">
+        <div class="title">
+          <h2>Videolar</h2>
+        </div>
+        <!-- <div class="text">
+          <p>Vous désirez vivre une expérience exclusive et personnelle ? N’hésitez pas à contacter notre équipe. Nous
+            vous conseillerons sur les meilleurs possibilités en fonction de vos envies.</p>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="home_section_4" class="home_section_4 gallery_title">
+      <div class="section__header">
+        <div class="buttons">
+          <a href="https://www.facebook.com/spiritobrussels.be/photos/?ref=page_internal" target="_blank">Galeriye
+            gözat<span class="icon"><i class="fal fa-chevron-right"></i></span></a>
+        </div>
+      </div>
+      <div class="slick__gallery devio__animate" data-animate="fade-image">
+        <div class="images_view">
+          <h1>lLA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
+          <img src="./assets/LA-NOUBA-SEASON-OPENING-DAY-1-38.jpg" alt="" class="lazy">
+        </div>
+        <div class="images_view">
+          <h1>lLA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
+          <img src="./assets/OMAH-LAY-8.jpg" alt="" class="lazy">
+        </div>
+        <div class="images_view">
+          <h1>lLA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
+          <img src="./assets/B-YOUNG-37.jpg" alt="" class="lazy">
+        </div>
+        <div class="images_view">
+          <h1>lLA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
+          <img src="./assets/OMAH-LAY-14.jpg" alt="" class="lazy">
         </div>
       </div>
     </section>
+
+    
 
     <section id="contact" class="contact">
       <div class="c__container__full full sm_full">
@@ -1090,79 +1164,38 @@
         <div class="blurbs">
           <div class="blurb">
             <div class="logo">
-              <img alt="" data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/logo-spirito-colors.svg"
-                class="lazyload"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-                  src="wp-content/uploads/2022/09/logo-spirito-colors.svg" alt=""></noscript>
+              <img alt="" 
+              src="./wp-content//uploads/2022/09/Logo.png" style="width: 20rem;"
+              class="lazyload" />
             </div>
           </div>
           <div class="blurb">
-            <div id="policyNav" class="menu-policy-container">
-              <ul id="policy-menu" class="policy-nav">
-                <li id="menu-item-517"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-517">
-                  <a rel="privacy-policy" href="politique-de-confidentialite/index.html">Politique de
-                    confidentialité</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="blurb">
-            <div id="footerNav" class="menu-sidebar-container">
-              <ul id="footer-menu" class="footer-nav">
-                <li id="menu-item-513"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-513">
-                  <a href="index.html" aria-current="page">Accueil</a>
-                </li>
-                <li id="menu-item-514"
-                  class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-514"><a
-                    href="index.html#events" aria-current="page">Events</a></li>
-                <li id="menu-item-515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-515"><a
-                    href="zones/index.html">Zones</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="blurb">
-            <div class="section__header">
-              <div class="title">
-                <h5>Inscrivez-vous à notre newsletter !</h5>
+            <div class="blurb_content">
+              <div class="icon">
+                <img src="./assets/location-sign-svgrepo-com.svg" alt="">
               </div>
-              <div class="form">
-
-                <div class="wpcf7 no-js" id="wpcf7-f512-o5" lang="fr-FR" dir="ltr">
-                  <div class="screen-reader-response">
-                    <p role="status" aria-live="polite" aria-atomic="true"></p>
-                    <ul></ul>
-                  </div>
-                  <form action="https://www.spiritobrussels.com/fr/#wpcf7-f512-o5" method="post"
-                    class="wpcf7-form init mailchimp-ext-0.5.68" aria-label="Formulaire de contact"
-                    novalidate="novalidate" data-status="init">
-                    <div style="display: none;">
-                      <input type="hidden" name="_wpcf7" value="512" />
-                      <input type="hidden" name="_wpcf7_version" value="5.7.6" />
-                      <input type="hidden" name="_wpcf7_locale" value="fr_FR" />
-                      <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f512-o5" />
-                      <input type="hidden" name="_wpcf7_container_post" value="0" />
-                      <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                      <input type="hidden" name="_wpcf7_recaptcha_response" value="" />
-                    </div>
-                    <div class="form-group">
-                      <p><span class="wpcf7-form-control-wrap" data-name="newsletter-email"><input size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
-                            id="newsletter_email" aria-required="true" aria-invalid="false" placeholder="Adresse e-mail"
-                            value="" type="email" name="newsletter-email" /></span><br />
-                        <button type="submit"><i class="fal fa-arrow-right"></i></button>
-                      </p>
-                    </div>
-                    <div class="wpcf7-response-output" aria-hidden="true"></div>
-                    <p style="display: none !important"><span class="wpcf7-form-control-wrap referer-page"><input
-                          type="hidden" name="referer-page"
-                          value="https://www.spiritobrussels.com/fr/welcome/?gclid=CjwKCAjwhJukBhBPEiwAniIcNYjTIGYh55O9EXULqm6ecOQ7h8KC7FsLeJ2UE5YmFsl8GqHRa5T7-xoCVs4QAvD_BwE"
-                          data-value="https://www.spiritobrussels.com/fr/welcome/?gclid=CjwKCAjwhJukBhBPEiwAniIcNYjTIGYh55O9EXULqm6ecOQ7h8KC7FsLeJ2UE5YmFsl8GqHRa5T7-xoCVs4QAvD_BwE"
-                          class="wpcf7-form-control wpcf7-text referer-page" aria-invalid="false"></span></p>
-                    <!-- Chimpmatic extension by Renzo Johnson -->
-                  </form>
-                </div>
+              <div class="container">
+                <h3>Şht. Hasan Cafer Sokak Merit Park Hotel Yanı, GİRNE</h3>
+              </div>
+            </div>
+          </div>
+          <div class="blurb">
+            <div class="blurb_content">
+              <div class="icon">
+                <img src="./assets/location-sign-svgrepo-com.svg" alt="">
+              </div>
+              <div class="container">
+                <h3>Şht. Hasan Cafer Sokak Merit Park Hotel Yanı, GİRNE</h3>
+              </div>
+            </div>
+          </div>
+          <div class="blurb">
+            <div class="blurb_content">
+              <div class="icon">
+                <img src="./assets/location-sign-svgrepo-com.svg" alt="">
+              </div>
+              <div class="container">
+                <h3>Şht. Hasan Cafer Sokak Merit Park Hotel Yanı, GİRNE</h3>
               </div>
             </div>
           </div>
@@ -1495,8 +1528,8 @@
       <div class="c__container__full full">
         <div class="copyright">
           <div class="c__container">
-            <p>Spirito &copy; 2023 - Tous droits réservés - by <a href="https://curryketchup.be/"
-                target="_blank">Curryketchup</a></p>
+            <p>La Nouba &copy; 2023 - copyright reserved - by <a href="https://curryketchup.be/"
+                target="_blank">CyprusCodes</a></p>
           </div>
         </div>
       </div>
