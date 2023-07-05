@@ -6,9 +6,7 @@
     padding: 30px 0 !important;
     background-color: #1c1c1c;
 }
-.gallery_title .buttons{
-    margin-top: 23rem !important;
-}
+
 .images_view{
     width: 25%;
     display: flex;
@@ -30,10 +28,13 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.59375rem;
 text-transform: uppercase;
+margin-bottom: 1rem;
 }
 .images_view img{
     width: 100%;
+    height: 100%;
     padding: 5px;
+    object-fit: cover;
 }
 .blurbs{
     gap: 2rem !important;
@@ -56,11 +57,13 @@ text-transform: uppercase;
 height: 2.5rem;
 }
 .blurb_content .container{
-    padding: 1rem;
-    width: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 18rem;
     color: #FFF;
 text-align: center;
-font-size: 1.25rem;
 font-family: Cambo;
 font-style: normal;
 font-weight: 400;
@@ -70,5 +73,49 @@ border: 4px solid #CDA072;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 12rem !important;
+    height: 7rem !important;
+    margin-bottom: 2rem !important;
+}
+.blurb_content .container h3{
+
+font-size: 1.25rem !important;
+}
+section.sidebar .c__container__full {
+    padding-top: 100px;
+    border-top: none !important;
+    border-bottom: 1px solid rgb(211, 170, 122) !important;
+}
+@media (max-width: 1620px) {
+    .c__container__full.full .blurbs{
+        flex-wrap: wrap !important;
+    }
+}
+@media (max-width: 575.98px) {
+    section.home_section_4 .section__header{
+        margin-top: 19rem !important;
+        background-color: none !important;
+    }
+}
+.buttons a{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    color: #d3aa7a;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: Bellefair;
+    margin-bottom: 5rem;
+}
+.buttons a span.icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #d3aa7a;
+    border-radius: 50px;
+    font-size: 14px;
 }
