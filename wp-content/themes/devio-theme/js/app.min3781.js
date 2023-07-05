@@ -105,17 +105,17 @@ jQuery(function () {
         x: "-40%",
         duration: 3,
       }),
-      gsap.to(".slick__unique .zone .zone__header", {
-        scrollTrigger: {
-          trigger: ".slick__unique",
-          start: "top 80%",
-          end: "bottom 20%",
-          scrub: 3,
-        },
-        scale: 1.2,
-        duration: 3,
-        ease: "none",
-      }),
+      // gsap.to(".slick__unique .zone .zone__header", {
+      //   scrollTrigger: {
+      //     trigger: ".slick__unique",
+      //     start: "top 80%",
+      //     end: "bottom 20%",
+      //     scrub: 3,
+      //   },
+      //   scale: 1.2,
+      //   duration: 3,
+      //   ease: "none",
+      // }),
       "undefined" != typeof eventCountdown
         ? ((i = new Date(eventCountdown + " 22:00:00").getTime()),
           (a = setInterval(function () {
