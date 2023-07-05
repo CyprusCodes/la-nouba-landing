@@ -146,7 +146,7 @@ section.sidebar .c__container__full {
     font-weight: 200 !important;
     font-size: 15px !important;
     }
-    .zone__header{
+    .modal#reservationModal .modal-dialog .modal-content .modal-body .step_1 .blurbs .blurb .zone__header { 
         padding: none !important;
         height: 7rem !important;
         width: 7rem !important;
@@ -154,9 +154,27 @@ section.sidebar .c__container__full {
         align-items: center;
         justify-content: center;
     }
+    .blurb_content .container h3 {
+        font-size: 1rem !important;
+    }
+    .blurb_content .container {
+        width: 13rem !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .blurbs .logo img{
+        height: 5rem !important;
+    width: 13rem !important;
+    }
 }
 @media (max-width: 580px) {
     
+}
+.modal-body .title{
+    margin-top: 2rem !important;
+}
+section.home_section_2 .video__container .overlay, section.home_section_3 .zones__container .overlay{
+    display: none !important;
 }
 #hu-revoke{
     display: none !important;
