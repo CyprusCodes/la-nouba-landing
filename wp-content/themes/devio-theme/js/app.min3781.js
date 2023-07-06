@@ -76,11 +76,11 @@ jQuery(function () {
         gsap.to(e[0], {
           scrollTrigger: {
             trigger: e[0].closest("section"),
-            start: "20% 50%",
+            start: "0% 0%",
             end: "50% 20%",
             scrub: 1,
           },
-          y: "50%",
+          y: "60%",
           duration: 3,
         })),
       (e = document.getElementsByClassName("home_section_1_title_left")),

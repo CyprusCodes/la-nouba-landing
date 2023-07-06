@@ -7,8 +7,8 @@ jQuery(function () {
           ? gsap.to(e, {
               scrollTrigger: {
                 trigger: e.closest("section"),
-                start: "20% 60%",
-                end: "20% 60%",
+                start: "100% 20%",
+                end: "20% 100%",
                 toggleActions: "play none reverse none",
               },
               duration: 1,
