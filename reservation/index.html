@@ -627,7 +627,7 @@
           <div class="container">
             <div class="row">
               <div class="booking-form">
-                <form>
+                <form method="post" name="contactform" id="contactform">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
@@ -644,7 +644,7 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <span class="form-label">E-Posta Adresi:</span>
-                        <input class="form-control" type="email" required placeholder="example@exmple.com">
+                        <input class="form-control" type="email" name="name" required placeholder="example@exmple.com">
                       </div>
                     </div>
                   </div>
@@ -652,26 +652,26 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <span class="form-label">İsim</span>
-                        <input class="form-control" type="text" required placeholder="İsim">
+                        <input class="form-control" type="text" name="last_name" required placeholder="İsim">
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <span class="form-label">Soyisim</span>
-                        <input class="form-control" type="text" required placeholder="Soyisim">
+                        <input class="form-control" name="soyisim" type="text" required placeholder="Soyisim">
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
                         <span class="form-label">Telefon Numarası</span>
-                        <input class="form-control" type="text" required placeholder="Telefon Numarası">
+                        <input class="form-control" name="phone" type="text" required placeholder="Telefon Numarası">
                       </div>
                     </div>
 
                     <div class="col-md-4">
                       <div class="form-group">
                         <span class="form-label">Kadın Sayısı</span>
-                        <select class="form-control">
+                        <select class="form-control" name="kadin">
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -690,7 +690,7 @@
                     <div class="col-md-4">
                       <div class="form-group">
                         <span class="form-label">Erkek Sayısı</span>
-                        <select class="form-control">
+                        <select class="form-control" name="erkek">
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -710,7 +710,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <span class="form-label">Özel Mesajınız (Şişeli Bistro, Doğum Günü vb.)</span>
-                        <textarea class="form-control" cols="50">
+                        <textarea class="form-control" cols="50" name="mesaj">
 
                     </textarea>
                       </div>
@@ -735,6 +735,18 @@
 
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr-HjRbTC3VDnHD62gowS8TUb8FCIUcQU"></script>
+    <script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbxMSKvwOHmIdq0EdO_DmSiTZkiiNidf-40Se4V1qdwZTVsIHOGvcHKnUwl-euRKwbNS/exec'
+			const form = document.forms['contactform']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+			})
+		  </script>
     <script type="text/javascript">
       (function ($) {
 
