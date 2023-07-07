@@ -510,18 +510,18 @@
     <div id="navbarNavDropdown" class="menu-main-left-container">
       <ul id="main-menu" class="navbar-nav">
         <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><a
-            href="../index.html#events">olaylar</a></li>
+            href="../index.html#events">Etkinlikler</a></li>
         <li id="menu-item-290"
           class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-290"><a
-            href="index.html" aria-current="page">bölgeler</a></li>
+            href="index.html" aria-current="page">Galeri</a></li>
       </ul>
     </div>
     <div id="navbarNavDropdown" class="menu-main-right-container">
       <ul id="main-menu" class="navbar-nav">
         <li id="menu-item-289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a
-            target="_blank" rel="noopener" href="#">Hakkımızda</a></li>
+            rel="noopener" href="../index.html#home_sub_section">Hakkımızda</a></li>
         <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
-            href="#contact">İletişim</a></li>
+            href="../index.html#contact">İletişim</a></li>
       </ul>
     </div>
   </div>
@@ -547,7 +547,7 @@
         <div id="navbarNavDropdown" class="menu-main-left-container">
           <ul id="main-menu" class="navbar-nav">
             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-190"><a
-                href="index.html#events" aria-current="page">Etkinlikler</a></li>
+                href="../index.html#events" aria-current="page">Etkinlikler</a></li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a href="#">Galeri</a>
             </li>
           </ul>
@@ -561,10 +561,10 @@
       <div class="right">
         <div id="navbarNavDropdown" class="menu-main-right-container">
           <ul id="main-menu" class="navbar-nav">
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a target="_blank"
-                rel="noopener" href="#gallery">Hakkımızda</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a rel="noopener"
+                href="../index.html#home_sub_section">Hakkımızda</a></li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
-                href="#contact">İletişim</a></li>
+                href="../index.html#contact">İletişim</a></li>
           </ul>
         </div>
         <div id="btn-menu">
@@ -736,336 +736,336 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr-HjRbTC3VDnHD62gowS8TUb8FCIUcQU"></script>
     <script>
-			const scriptURL = 'https://script.google.com/macros/s/AKfycbxMSKvwOHmIdq0EdO_DmSiTZkiiNidf-40Se4V1qdwZTVsIHOGvcHKnUwl-euRKwbNS/exec'
-			const form = document.forms['contactform']
-		  
-			form.addEventListener('submit', e => {
-			  e.preventDefault()
-			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				.then(response => alert("Thank you! your form is submitted successfully." ))
-				.then(() => {  window.location.reload(); })
-				.catch(error => console.error('Error!', error.message))
-			})
-		  </script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxMSKvwOHmIdq0EdO_DmSiTZkiiNidf-40Se4V1qdwZTVsIHOGvcHKnUwl-euRKwbNS/exec'
+      const form = document.forms['contactform']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => alert("Thank you! your form is submitted successfully."))
+          .then(() => { window.location.reload(); })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
     <script type="text/javascript">
-      (function ($) {
+        (function ($) {
 
-        /**
-         * initMap
-         *
-         * Renders a Google Map onto the selected jQuery element
-         *
-         * @date    22/10/19
-         * @since   5.8.6
-         *
-         * @param   jQuery $el The jQuery element.
-         * @return  object The map instance.
-         */
-        function initMap($el) {
+          /**
+           * initMap
+           *
+           * Renders a Google Map onto the selected jQuery element
+           *
+           * @date    22/10/19
+           * @since   5.8.6
+           *
+           * @param   jQuery $el The jQuery element.
+           * @return  object The map instance.
+           */
+          function initMap($el) {
 
-          // Find marker elements within map.
-          var $markers = $el.find('.marker');
+            // Find marker elements within map.
+            var $markers = $el.find('.marker');
 
-          // Create gerenic map.
-          var mapArgs = {
-            zoom: $el.data('zoom') || 16,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            disableDefaultUI: true,
-            styles: [
-              {
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#212121"
-                  }
-                ]
-              },
-              {
-                "elementType": "labels.icon",
-                "stylers": [
-                  {
-                    "visibility": "off"
-                  }
-                ]
-              },
-              {
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#757575"
-                  }
-                ]
-              },
-              {
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                  {
-                    "color": "#212121"
-                  }
-                ]
-              },
-              {
-                "featureType": "administrative",
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#757575"
-                  }
-                ]
-              },
-              {
-                "featureType": "administrative.country",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#9e9e9e"
-                  }
-                ]
-              },
-              {
-                "featureType": "administrative.land_parcel",
-                "stylers": [
-                  {
-                    "visibility": "off"
-                  }
-                ]
-              },
-              {
-                "featureType": "administrative.locality",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#bdbdbd"
-                  }
-                ]
-              },
-              {
-                "featureType": "poi",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#757575"
-                  }
-                ]
-              },
-              {
-                "featureType": "poi.park",
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#181818"
-                  }
-                ]
-              },
-              {
-                "featureType": "poi.park",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#616161"
-                  }
-                ]
-              },
-              {
-                "featureType": "poi.park",
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                  {
-                    "color": "#1b1b1b"
-                  }
-                ]
-              },
-              {
-                "featureType": "road",
-                "elementType": "geometry.fill",
-                "stylers": [
-                  {
-                    "color": "#2c2c2c"
-                  }
-                ]
-              },
-              {
-                "featureType": "road",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#8a8a8a"
-                  }
-                ]
-              },
-              {
-                "featureType": "road.arterial",
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#373737"
-                  }
-                ]
-              },
-              {
-                "featureType": "road.highway",
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#3c3c3c"
-                  }
-                ]
-              },
-              {
-                "featureType": "road.highway.controlled_access",
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#4e4e4e"
-                  }
-                ]
-              },
-              {
-                "featureType": "road.local",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#616161"
-                  }
-                ]
-              },
-              {
-                "featureType": "transit",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#757575"
-                  }
-                ]
-              },
-              {
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [
-                  {
-                    "color": "#000000"
-                  }
-                ]
-              },
-              {
-                "featureType": "water",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#3d3d3d"
-                  }
-                ]
-              }
-            ]
-          };
-          var map = new google.maps.Map($el[0], mapArgs);
+            // Create gerenic map.
+            var mapArgs = {
+              zoom: $el.data('zoom') || 16,
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              disableDefaultUI: true,
+              styles: [
+                {
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#212121"
+                    }
+                  ]
+                },
+                {
+                  "elementType": "labels.icon",
+                  "stylers": [
+                    {
+                      "visibility": "off"
+                    }
+                  ]
+                },
+                {
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                    {
+                      "color": "#757575"
+                    }
+                  ]
+                },
+                {
+                  "elementType": "labels.text.stroke",
+                  "stylers": [
+                    {
+                      "color": "#212121"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "administrative",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#757575"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "administrative.country",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                    {
+                      "color": "#9e9e9e"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "administrative.land_parcel",
+                  "stylers": [
+                    {
+                      "visibility": "off"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "administrative.locality",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                    {
+                      "color": "#bdbdbd"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "poi",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                    {
+                      "color": "#757575"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "poi.park",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#181818"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "poi.park",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                    {
+                      "color": "#616161"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "poi.park",
+                  "elementType": "labels.text.stroke",
+                  "stylers": [
+                    {
+                      "color": "#1b1b1b"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "road",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                    {
+                      "color": "#2c2c2c"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "road",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                    {
+                      "color": "#8a8a8a"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "road.arterial",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#373737"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "road.highway",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#3c3c3c"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "road.highway.controlled_access",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#4e4e4e"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "road.local",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                    {
+                      "color": "#616161"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "transit",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                    {
+                      "color": "#757575"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "water",
+                  "elementType": "geometry",
+                  "stylers": [
+                    {
+                      "color": "#000000"
+                    }
+                  ]
+                },
+                {
+                  "featureType": "water",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                    {
+                      "color": "#3d3d3d"
+                    }
+                  ]
+                }
+              ]
+            };
+            var map = new google.maps.Map($el[0], mapArgs);
 
-          // Add markers.
-          map.markers = [];
-          $markers.each(function () {
-            initMarker($(this), map);
-          });
-
-          // Center map based on markers.
-          centerMap(map);
-
-          // Return map instance.
-          return map;
-        }
-
-        /**
-         * initMarker
-         *
-         * Creates a marker for the given jQuery element and map.
-         *
-         * @date    22/10/19
-         * @since   5.8.6
-         *
-         * @param   jQuery $el The jQuery element.
-         * @param   object The map instance.
-         * @return  object The marker instance.
-         */
-        function initMarker($marker, map) {
-
-          // Get position from marker.
-          var lat = $marker.data('lat');
-          var lng = $marker.data('lng');
-          var latLng = {
-            lat: parseFloat(lat),
-            lng: parseFloat(lng)
-          };
-
-          // Create marker instance.
-          var marker = new google.maps.Marker({
-            position: latLng,
-            map: map,
-            icon: 'https://spiritobrussels.com/wp-content/uploads/2022/09/map-marker.svg',
-            url: 'https://goo.gl/maps/Q9wpv5Psd1nUFKCq5',
-          });
-
-          google.maps.event.addListener(marker, 'click', function () {
-            // window.location.href = this.url;
-            window.open(this.url, '_blank');
-          });
-
-          // Append to reference for later use.
-          map.markers.push(marker);
-
-          // If marker contains HTML, add it to an infoWindow.
-          if ($marker.html()) {
-
-            // Create info window.
-            var infowindow = new google.maps.InfoWindow({
-              content: $marker.html()
+            // Add markers.
+            map.markers = [];
+            $markers.each(function () {
+              initMarker($(this), map);
             });
 
-            // Show info window when marker is clicked.
+            // Center map based on markers.
+            centerMap(map);
+
+            // Return map instance.
+            return map;
+          }
+
+          /**
+           * initMarker
+           *
+           * Creates a marker for the given jQuery element and map.
+           *
+           * @date    22/10/19
+           * @since   5.8.6
+           *
+           * @param   jQuery $el The jQuery element.
+           * @param   object The map instance.
+           * @return  object The marker instance.
+           */
+          function initMarker($marker, map) {
+
+            // Get position from marker.
+            var lat = $marker.data('lat');
+            var lng = $marker.data('lng');
+            var latLng = {
+              lat: parseFloat(lat),
+              lng: parseFloat(lng)
+            };
+
+            // Create marker instance.
+            var marker = new google.maps.Marker({
+              position: latLng,
+              map: map,
+              icon: 'https://spiritobrussels.com/wp-content/uploads/2022/09/map-marker.svg',
+              url: 'https://goo.gl/maps/Q9wpv5Psd1nUFKCq5',
+            });
+
             google.maps.event.addListener(marker, 'click', function () {
-              infowindow.open(map, marker);
+              // window.location.href = this.url;
+              window.open(this.url, '_blank');
             });
+
+            // Append to reference for later use.
+            map.markers.push(marker);
+
+            // If marker contains HTML, add it to an infoWindow.
+            if ($marker.html()) {
+
+              // Create info window.
+              var infowindow = new google.maps.InfoWindow({
+                content: $marker.html()
+              });
+
+              // Show info window when marker is clicked.
+              google.maps.event.addListener(marker, 'click', function () {
+                infowindow.open(map, marker);
+              });
+            }
           }
-        }
 
-        /**
-         * centerMap
-         *
-         * Centers the map showing all markers in view.
-         *
-         * @date    22/10/19
-         * @since   5.8.6
-         *
-         * @param   object The map instance.
-         * @return  void
-         */
-        function centerMap(map) {
+          /**
+           * centerMap
+           *
+           * Centers the map showing all markers in view.
+           *
+           * @date    22/10/19
+           * @since   5.8.6
+           *
+           * @param   object The map instance.
+           * @return  void
+           */
+          function centerMap(map) {
 
-          // Create map boundaries from all map markers.
-          var bounds = new google.maps.LatLngBounds();
-          map.markers.forEach(function (marker) {
-            bounds.extend({
-              lat: marker.position.lat(),
-              lng: marker.position.lng()
+            // Create map boundaries from all map markers.
+            var bounds = new google.maps.LatLngBounds();
+            map.markers.forEach(function (marker) {
+              bounds.extend({
+                lat: marker.position.lat(),
+                lng: marker.position.lng()
+              });
+            });
+
+            // Case: Single marker.
+            if (map.markers.length == 1) {
+              map.setCenter(bounds.getCenter());
+
+              // Case: Multiple markers.
+            } else {
+              map.fitBounds(bounds);
+            }
+          }
+
+          // Render maps on page load.
+          $(document).ready(function () {
+            $('.acf-map').each(function () {
+              var map = initMap($(this));
             });
           });
 
-          // Case: Single marker.
-          if (map.markers.length == 1) {
-            map.setCenter(bounds.getCenter());
-
-            // Case: Multiple markers.
-          } else {
-            map.fitBounds(bounds);
-          }
-        }
-
-        // Render maps on page load.
-        $(document).ready(function () {
-          $('.acf-map').each(function () {
-            var map = initMap($(this));
-          });
-        });
-
-      })(jQuery);
+        })(jQuery);
     </script>
     <footer>
       <div class="c__container__full full">
