@@ -1,4 +1,5 @@
 jQuery(function () {
+  var windowWidth = window.innerWidth;
   var i, a, e;
   0 < $("#intro").length &&
     ($("#goToClub").on("click", function () {
@@ -80,31 +81,54 @@ jQuery(function () {
             end: "50% 20%",
             scrub: 1,
           },
-          y: "60%",
+          y: "50%",
           duration: 3,
         })),
       (e = document.getElementsByClassName("home_section_1_title_left")),
-      gsap.to(e[0], {
-        scrollTrigger: {
-          trigger: e[0].closest("section"),
-          start: "-20% 50%",
-          end: "10% 10%",
-          scrub: 1,
-        },
-        x: "40%",
-        duration: 3,
-      }),
+      windowWidth >= 450
+        ? gsap.to(e[0], {
+            scrollTrigger: {
+              trigger: e[0].closest("section"),
+              start: "-20% 50%",
+              end: "10% 10%",
+              scrub: 1,
+            },
+            x: "40%",
+            duration: 3,
+          })
+        : gsap.to(e[0], {
+            scrollTrigger: {
+              trigger: e[0].closest("section"),
+              start: "0% 50%",
+              end: "50% 50%",
+              scrub: 1,
+            },
+            x: "1%",
+            duration: 2,
+          }),
       (e = document.getElementsByClassName("home_section_1_title_right")),
-      gsap.to(e[0], {
-        scrollTrigger: {
-          trigger: e[0].closest("section"),
-          start: "-20% 50%",
-          end: "10% 10%",
-          scrub: 1,
-        },
-        x: "-40%",
-        duration: 3,
-      }),
+      console.log(windowWidth),
+      windowWidth >= 450
+        ? gsap.to(e[0], {
+            scrollTrigger: {
+              trigger: e[0].closest("section"),
+              start: "-20% 50%",
+              end: "10% 10%",
+              scrub: 1,
+            },
+            x: "-40%",
+            duration: 3,
+          })
+        : gsap.to(e[0], {
+            scrollTrigger: {
+              trigger: e[0].closest("section"),
+              start: "0% 50%",
+              end: "50% 50%",
+              scrub: 1,
+            },
+            x: "-1%",
+            duration: 2,
+          }),
       // gsap.to(".slick__unique .zone .zone__header", {
       //   scrollTrigger: {
       //     trigger: ".slick__unique",

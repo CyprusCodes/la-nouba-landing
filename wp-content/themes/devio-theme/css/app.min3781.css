@@ -12397,7 +12397,7 @@ nav.navbar .right #navbarNavDropdown ul.navbar-nav li.menu-item a {
   opacity: 0.5;
   /* transform: scaleX(-1); */
   background-size: 100%;
-  background-image: url('/assets/Loading.png');
+  background-image: url("/assets/Loading.png");
   background-repeat: no-repeat;
 }
 #menu #navbarNavDropdown {
@@ -14192,8 +14192,12 @@ section.home_section_4
   .slick-track
   .slick-slide
   > div {
-  margin-bottom: 250px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   flex-flow: row wrap;
   align-items: center;
 }

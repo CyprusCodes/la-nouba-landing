@@ -534,7 +534,7 @@
     <div id="transition"></div>
 
 
-    <header class="home full">
+    <header id="header" class="home full">
       <div class="cover">
         <div class="cover__inner">
           <video id="home_cover_video" class="lazy" playsinline webkit-playsinline autoplay muted loop>
@@ -565,7 +565,7 @@
         </div>
       </div>
       <div id="home_sub_section" class="blurbs">
-        <div class="blurb">
+        <div id="slide_in_image" class="blurb">
           <div class="image home_section_1_image devio__animate" data-animate="image-clip">
             <div class="image__container">
               <img class="lazy" data-src="./wp-content/uploads/2022/09/SlideInImage.png"
@@ -575,17 +575,19 @@
             </div>
           </div>
         </div>
-        <div class="blurb mb-5">
+        <div class="blurb">
           <div class="home_section_1_animate">
             <div class="section__header">
-              <div class="text">
-                <p>2021 yılında projendirilen ve hizmete açılan La Nouba, Girne-Karaoğlanoğlu bölgesinde denize sıfır
+              <div id="description_container" class="text">
+                <p id="description">2021 yılında projendirilen ve hizmete açılan La Nouba, Girne-Karaoğlanoğlu
+                  bölgesinde denize sıfır
                   bir
                   konumda yer almaktadır.</p>
-                <p>Farklı konsepti ve eğlence anlayışı ile Kuzey Kıbrıs Türk Cumhuriyeti gece
+                <p id="description">Farklı konsepti ve eğlence anlayışı ile Kuzey Kıbrıs Türk Cumhuriyeti gece
                   hayatına yeni bir boyut kazandıran La Nouba, dünyanın farklı yerlerinden misafirleri de
                   ağırlamaktadır.</p>
-                <p>Muhteşem ambiyansa sahip konumu, büyüleyici dizaynı, nefes kesen sahne şovları ve sınırların ötesinde
+                <p id="description">Muhteşem ambiyansa sahip konumu, büyüleyici dizaynı, nefes kesen sahne şovları ve
+                  sınırların ötesinde
                   gerçekleşen eğlence anlayışı ile Avrupa’yı ayağınıza taşıyor.</p>
               </div>
             </div>
@@ -709,143 +711,58 @@
 
       <div class="c__container__full full sm_full section__header devio__animate" data-animate="fade-image">
         <div class="title mt-2">
-          <h2>fotoğraflar</h2>
+          <h2>Fotoğraflar</h2>
         </div>
       </div>
 
     </section>
-    <!-- image intrinsinc size: 1800 x 1013 -->
     <section id="home_section_4" class="home_section_4 gallery_title">
-
       <div class="slick__gallery devio__animate" data-animate="fade-image">
-        <!-- <div class="image">
-          <h4>BORIS BREJCHA IN CONCERT | 2ND JUNE FRIDAY 2023 </h4>
-          <img
-            data-lazy="./assets/B-YOUNG-27.jpg"
-            data-srcset="./assets/B-YOUNG-27.jpg 550w, ./assets/B-YOUNG-27.jpg 300w, ./assets/B-YOUNG-27.jpg 600w"
-            data-src="./assets/B-YOUNG-27.jpg"
-            data-sizes="(max-width: 450px) 100vw, 450px" class="lazy lazyload"
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-              class="lazy"
-              data-lazy="./assets/B-YOUNG-27.jpg"
-              src="./assets/B-YOUNG-27.jpg"
-              srcset="./assets/B-YOUNG-27.jpg 550w, ./assets/B-YOUNG-27.jpg 300w, ./assets/B-YOUNG-27.jpg 600w"
-              sizes="(max-width: 450px) 100vw, 450px" /></noscript>
-        </div> -->
-        <!-- <div class="images_view">
-          <h1>LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
-          <img src="./assets/yg_lanouba-22 (1).jpg" alt="" class="lazy">
+        <div class="carousel_container">
+          <div class="carousel" data-animate="fade-image">
+            <div class="slide"><img src="./assets/yg_lanouba-10.jpg" alt="" class="pic"></div>
+            <div class="slide"><img src="./assets/TION-WAYNE-21ST-AUGUST-SUNDAY-12.jpg" alt="" class="pic"></div>
+            <div class="slide"><img src="./assets/yg_lanouba-22.jpg" alt="" class="pic"></div>
+            <div class="slide"><img src="./assets/yg_lanouba-22 (1).jpg" alt="" class="pic"></div>
+            <div class="slide"><img src="./assets/yg_lanouba-22 (1).jpg" alt="" class="pic"></div>
+            <div class="slide"><img src="./assets/yg_lanouba-22 (1).jpg" alt="" class="pic"></div>
+          </div>
+          <div class="buttons">
+            <a href="#gallery" target="_blank">Galeriye
+              gözat<span class="icon"><i class="fal fa-chevron-right"></i></span></a>
+          </div>
         </div>
-        <div class="images_view">
-          <h1>LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
-          <img src="./assets/yg_lanouba-22.jpg" alt="" class="lazy">
-        </div>
-        <div class="images_view">
-          <h1>LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
-          <img src="./assets/TION-WAYNE-21ST-AUGUST-SUNDAY-12.jpg" alt="" class="lazy">
-        </div>
-        <div class="images_view">
-          <h1>LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
-          <img src="./assets/yg_lanouba-10.jpg" alt="" class="lazy">
-        </div> -->
-
-        <!-- <div class="image">
-          <img
-            data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64-550x367.jpg"
-            data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64.jpg 600w"
-            data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64-550x367.jpg"
-            data-sizes="(max-width: 450px) 100vw, 450px" class="lazy lazyload"
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-              class="lazy"
-              data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64-550x367.jpg"
-              src="wp-content/uploads/2022/09/JR_10thAnniversaryIG-64-550x367.jpg"
-              srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-64.jpg 600w"
-              sizes="(max-width: 450px) 100vw, 450px" /></noscript>
-        </div>
-        <div class="image">
-          <img data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_Ego_ig-14-550x367.jpg"
-            data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_Ego_ig-14-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_Ego_ig-14-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_Ego_ig-14.jpg 600w"
-            data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_Ego_ig-14-550x367.jpg"
-            data-sizes="(max-width: 450px) 100vw, 450px" class="lazy lazyload"
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-              class="lazy"
-              data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_Ego_ig-14-550x367.jpg"
-              src="wp-content/uploads/2022/09/JR_Ego_ig-14-550x367.jpg"
-              srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_Ego_ig-14-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_Ego_ig-14-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_Ego_ig-14.jpg 600w"
-              sizes="(max-width: 450px) 100vw, 450px" /></noscript>
-        </div>
-        <div class="image">
-          <img data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30-550x367.jpg"
-            data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30.jpg 600w"
-            data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30-550x367.jpg"
-            data-sizes="(max-width: 450px) 100vw, 450px" class="lazy lazyload"
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-              class="lazy"
-              data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30-550x367.jpg"
-              src="wp-content/uploads/2022/09/JR_guilty_ig-30-550x367.jpg"
-              srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-30.jpg 600w"
-              sizes="(max-width: 450px) 100vw, 450px" /></noscript>
-        </div> -->
-        <!-- <div class="image">
-          <img data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54-550x367.jpg"
-            data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54.jpg 600w"
-            data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54-550x367.jpg"
-            data-sizes="(max-width: 450px) 100vw, 450px" class="lazy lazyload"
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-              class="lazy"
-              data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54-550x367.jpg"
-              src="wp-content/uploads/2022/09/JR_guilty_ig-54-550x367.jpg"
-              srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_guilty_ig-54.jpg 600w"
-              sizes="(max-width: 450px) 100vw, 450px" /></noscript>
-        </div>
-        <div class="image">
-          <img data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/OpeningIG-1-550x367.jpg"
-            data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/OpeningIG-1-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/OpeningIG-1-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/OpeningIG-1.jpg 600w"
-            data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/OpeningIG-1-550x367.jpg"
-            data-sizes="(max-width: 450px) 100vw, 450px" class="lazy lazyload"
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-              class="lazy"
-              data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/OpeningIG-1-550x367.jpg"
-              src="wp-content/uploads/2022/09/OpeningIG-1-550x367.jpg"
-              srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/OpeningIG-1-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/OpeningIG-1-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/OpeningIG-1.jpg 600w"
-              sizes="(max-width: 450px) 100vw, 450px" /></noscript>
-        </div>
-        <div class="image">
-          <img data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/Ego_ig-8-550x367.jpg"
-            data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/Ego_ig-8-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Ego_ig-8-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Ego_ig-8.jpg 600w"
-            data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/Ego_ig-8-550x367.jpg"
-            data-sizes="(max-width: 450px) 100vw, 450px" class="lazy lazyload"
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-              class="lazy" data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/Ego_ig-8-550x367.jpg"
-              src="wp-content/uploads/2022/09/Ego_ig-8-550x367.jpg"
-              srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/Ego_ig-8-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Ego_ig-8-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/Ego_ig-8.jpg 600w"
-              sizes="(max-width: 450px) 100vw, 450px" /></noscript>
-        </div>
-        <div class="image">
-          <img
-            data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20-550x367.jpg"
-            data-srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20.jpg 600w"
-            data-src="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20-550x367.jpg"
-            data-sizes="(max-width: 450px) 100vw, 450px" class="lazy lazyload"
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
-              class="lazy"
-              data-lazy="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20-550x367.jpg"
-              src="wp-content/uploads/2022/09/JR_10thAnniversaryIG-20-550x367.jpg"
-              srcset="https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20-550x367.jpg 550w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20-300x200.jpg 300w, https://www.spiritobrussels.com/wp-content/uploads/2022/09/JR_10thAnniversaryIG-20.jpg 600w"
-              sizes="(max-width: 450px) 100vw, 450px" /></noscript>
-        </div> -->
-      </div>
-      <div class="pic-ctn">
-        <img src="./assets/yg_lanouba-10.jpg" alt="" class="pic">
-        <img src="./assets/TION-WAYNE-21ST-AUGUST-SUNDAY-12.jpg" alt="" class="pic">
-        <img src="./assets/yg_lanouba-22.jpg" alt="" class="pic">
-        <img src="./assets/yg_lanouba-22 (1).jpg" alt="" class="pic">
-      </div>
-      <div class="buttons">
-        <a href="#gallery" target="_blank">Galeriye
-          gözat<span class="icon"><i class="fal fa-chevron-right"></i></span></a>
       </div>
     </section>
+
+    <script>
+      const carousel = document.querySelector('.carousel');
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      carousel.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+      });
+
+      carousel.addEventListener('mouseleave', () => {
+        isDown = false;
+      });
+
+      carousel.addEventListener('mouseup', () => {
+        isDown = false;
+      });
+
+      carousel.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 1.5; // Adjust the scroll speed as desired
+        carousel.scrollLeft = scrollLeft - walk;
+      });
+    </script>
 
     <section id="home_section_3" class="home_section_3 gallery_title">
       <div class="section__header devio__animate" data-animate="fade-image">
@@ -859,23 +776,51 @@
       </div>
     </section>
     <!-- image intrinsinc size: 1800 x 1013 -->
-    <section id="home_section_4" class="home_section_4 gallery_title">
-      <div class="slick__gallery devio__animate" data-animate="fade-image">
-        <div class="images_view">
-          <h1>LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
-          <img src="./assets/LA-NOUBA-SEASON-OPENING-DAY-1-38.jpg" alt="" class="lazy">
+    <section id="home_section_4" class="home_section_4 gallery_title w-100">
+      <!-- <div>
+        <div class="carousel">
+          <div class="slide"><img src="./assets/yg_lanouba-10.jpg" alt="" class="pic"></div>
+          <div class="slide"><img src="./assets/TION-WAYNE-21ST-AUGUST-SUNDAY-12.jpg" alt="" class="pic"></div>
+          <div class="slide"><img src="./assets/yg_lanouba-22.jpg" alt="" class="pic"></div>
+          <div class="slide"><img src="./assets/yg_lanouba-22 (1).jpg" alt="" class="pic"></div>
+          <div class="slide"><img src="./assets/yg_lanouba-22 (1).jpg" alt="" class="pic"></div>
+          <div class="slide"><img src="./assets/yg_lanouba-22 (1).jpg" alt="" class="pic"></div>
         </div>
-        <div class="images_view">
-          <h1>LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
-          <img src="./assets/OMAH-LAY-8.jpg" alt="" class="lazy">
+        <div class="buttons">
+          <a href="#gallery" target="_blank">Galeriye
+            gözat<span class="icon"><i class="fal fa-chevron-right"></i></span></a>
         </div>
-        <div class="images_view">
-          <h1>LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
-          <img src="./assets/B-YOUNG-37.jpg" alt="" class="lazy">
-        </div>
-        <div class="images_view">
-          <h1>LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h1>
-          <img src="./assets/OMAH-LAY-14.jpg" alt="" class="lazy">
+      </div> -->
+      <div class="carousel_container">
+        <div class="carousel" data-animate="fade-image">
+          <div class="slide">
+            <img src="./assets/LA-NOUBA-SEASON-OPENING-DAY-1-38.jpg" alt="" class="pic">
+            <p class="carousel_description">LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</p>
+          </div>
+          <div class="slide">
+            <img src="./assets/OMAH-LAY-8.jpg" alt="" class="pic">
+            <h5 class="carousel_description">LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</h5>
+          </div>
+          <div class="slide">
+            <img src="./assets/B-YOUNG-37.jpg" alt="" class="pic">
+            <p class="carousel_description">LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</p>
+          </div>
+          <div class="slide">
+            <img src="./assets/OMAH-LAY-14.jpg" alt="" class="pic">
+            <p class="carousel_description">LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</p>
+          </div>
+          <div class="slide">
+            <img src="./assets/OMAH-LAY-14.jpg" alt="" class="pic">
+            <p class="carousel_description">LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</p>
+          </div>
+          <div class="slide">
+            <img src="./assets/OMAH-LAY-14.jpg" alt="" class="pic">
+            <p class="carousel_description">LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</p>
+          </div>
+          <div class="slide">
+            <img src="./assets/OMAH-LAY-14.jpg" alt="" class="pic">
+            <p class="carousel_description">LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023</p>
+          </div>
         </div>
       </div>
       <div class="buttons">
