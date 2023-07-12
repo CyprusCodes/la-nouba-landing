@@ -14379,16 +14379,7 @@ header.zones .cover {
   left: 0;
   transition: all 1s ease-in-out;
 }
-header.zones .cover:after {
-  content: "";
-  width: 100%;
-  height: 500px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  background: linear-gradient(0deg, #1c1c1c, rgba(28, 28, 28, 0));
-}
+
 header.zones .cover .cover__inner {
   width: 100%;
   height: 100%;
@@ -14410,11 +14401,23 @@ header.zones .cover .blurbs .blurb {
   margin-right: 15px;
 }
 @media (max-width: 575.98px) {
+  header.zones .cover .cover__inner {
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1c;
+  }
+
+  header.zones .cover .blurbs {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
   header.zones .cover .blurbs .blurb {
     width: 100%;
     height: calc(100% / 3 - 10px);
     margin-right: 0;
-    margin-bottom: 15px;
   }
 }
 header.zones .cover .blurbs .blurb:last-child {
@@ -14458,7 +14461,7 @@ section.zones_section_1 .section__header {
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 150px;
+
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -14466,7 +14469,6 @@ section.zones_section_1 .section__header {
 }
 @media (max-width: 575.98px) {
   section.zones_section_1 .section__header {
-    padding: 0 50px;
     flex-direction: column;
   }
 }
@@ -14490,8 +14492,6 @@ section.zones_section_1 .section__header .title {
 @media (max-width: 575.98px) {
   section.zones_section_1 .section__header .title {
     width: 100%;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
     padding-right: 0;
     border-right: 0;
     border-bottom: 1px solid #d3aa7a;
@@ -14529,15 +14529,12 @@ section.zones_section_1 .section__header .text p {
   line-height: 24px;
 }
 section.zones_section_1 .blurbs {
-  margin-bottom: 100px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
 section.zones_section_1 .blurbs .blurb {
   width: 980px;
-  margin-bottom: 150px;
-  padding-bottom: 100px;
   position: relative;
   border-bottom: 1px solid #d3aa7a;
 }
@@ -14633,12 +14630,14 @@ section.zones_section_1
   height: 100%;
 }
 section.zones_section_1 .blurbs .blurb .zone__header .image {
+  flex: 1;
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
 section.zones_section_1 .blurbs .blurb .zone__header .image:before {
+  flex: 1;
   content: "";
   width: 100%;
   height: 100%;
@@ -14649,6 +14648,7 @@ section.zones_section_1 .blurbs .blurb .zone__header .image:before {
   background-color: rgba(28, 28, 28, 0.3);
 }
 section.zones_section_1 .blurbs .blurb .zone__header img {
+  flex: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;

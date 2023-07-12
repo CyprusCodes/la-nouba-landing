@@ -81,11 +81,11 @@ jQuery(function () {
             end: "50% 20%",
             scrub: 1,
           },
-          y: "50%",
+          y: "25%",
           duration: 3,
         })),
       (e = document.getElementsByClassName("home_section_1_title_left")),
-      windowWidth >= 450
+      windowWidth >= 500
         ? gsap.to(e[0], {
             scrollTrigger: {
               trigger: e[0].closest("section"),
@@ -99,16 +99,16 @@ jQuery(function () {
         : gsap.to(e[0], {
             scrollTrigger: {
               trigger: e[0].closest("section"),
-              start: "0% 50%",
-              end: "50% 50%",
+              start: "-20% 50%",
+              end: "10% 10%",
               scrub: 1,
             },
-            x: "1%",
-            duration: 2,
+            x: -20,
+            duration: 1,
           }),
       (e = document.getElementsByClassName("home_section_1_title_right")),
       console.log(windowWidth),
-      windowWidth >= 450
+      windowWidth >= 500
         ? gsap.to(e[0], {
             scrollTrigger: {
               trigger: e[0].closest("section"),
@@ -122,12 +122,12 @@ jQuery(function () {
         : gsap.to(e[0], {
             scrollTrigger: {
               trigger: e[0].closest("section"),
-              start: "0% 50%",
-              end: "50% 50%",
+              start: "-20% 50%",
+              end: "10% 10%",
               scrub: 1,
             },
-            x: "-1%",
-            duration: 2,
+            x: -10,
+            duration: 1,
           }),
       // gsap.to(".slick__unique .zone .zone__header", {
       //   scrollTrigger: {
