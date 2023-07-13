@@ -13741,7 +13741,7 @@ section.home_section_2 .form .wpcf7 .submit a span.icon {
   font-size: 14px;
 }
 section.home_section_3 {
-  overflow: scroll;
+  overflow: hidden;
 }
 section.home_section_3 .section__header {
   max-width: 980px;

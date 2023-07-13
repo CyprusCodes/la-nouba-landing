@@ -207,7 +207,6 @@ img:nth-child(4) {
 }
 
 .carousel_container {
-  display: flex;
   width: 100%;
 }
 
