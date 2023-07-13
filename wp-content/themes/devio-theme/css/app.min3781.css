@@ -13741,7 +13741,7 @@ section.home_section_2 .form .wpcf7 .submit a span.icon {
   font-size: 14px;
 }
 section.home_section_3 {
-  overflow: hidden;
+  overflow: scroll;
 }
 section.home_section_3 .section__header {
   max-width: 980px;
@@ -14264,7 +14264,6 @@ section.home_section_4
   .slick-track
   .slick-slide
   .image {
-  width: calc(25% - 37.5px) !important;
   height: 350px;
   margin-right: 50px;
 }
@@ -14415,9 +14414,8 @@ header.zones .cover .blurbs .blurb {
   }
 
   header.zones .cover .blurbs .blurb {
-    width: 100%;
-    height: calc(100% / 3 - 10px);
-    margin-right: 0;
+    width: 100% !important;
+    height: 100% !important;
   }
 }
 header.zones .cover .blurbs .blurb:last-child {
