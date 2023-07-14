@@ -425,8 +425,7 @@
     href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css?ver=6.2.2' type='text/css' media='all' />
   <link rel='stylesheet' id='devio-styles-css' href='./wp-content/themes/devio-theme/css/app.min3781.css?ver=6.2.2'
     type='text/css' media='all' />
-  <script type='text/javascript' src='./wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4'
-    id='jquery-core-js'></script>
+  <script type='text/javascript' src='./wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4' id='jquery-core-js'></script>
   <script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min6b00.js?ver=3.4.0'
     id='jquery-migrate-js'></script>
   <script type='text/javascript' id='wpml-cookie-js-extra'>
@@ -470,10 +469,12 @@
       transition: opacity 400ms;
       transition-delay: 0ms;
     }
-    .blurbs{
+
+    .blurbs {
       opacity: 20%;
     }
-    header.zones .cover .section__header{
+
+    header.zones .cover .section__header {
       z-index: 10;
     }
   </style>
@@ -519,7 +520,7 @@
             href="./index.html#events">Etkinlikler</a></li>
         <li id="menu-item-290"
           class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-290"><a
-            href="index.html" aria-current="page">Galeri</a></li>
+            href="gallery.html" aria-current="page">Galeri</a></li>
       </ul>
     </div>
     <div id="navbarNavDropdown" class="menu-main-right-container">
@@ -527,7 +528,7 @@
         <li id="menu-item-289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a
             rel="noopener" href="./index.html#home_sub_section">Hakkımızda</a></li>
         <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
-            href="./index.html#contact">İletişim</a></li>
+            href="#">İletişim</a></li>
       </ul>
     </div>
   </div>
@@ -554,7 +555,8 @@
           <ul id="main-menu" class="navbar-nav">
             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-190"><a
                 href="./index.html#events" aria-current="page">Etkinlikler</a></li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a href="#">Galeri</a>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a
+                href="gallery.html">Galeri</a>
             </li>
           </ul>
         </div>
@@ -569,8 +571,8 @@
           <ul id="main-menu" class="navbar-nav">
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a rel="noopener"
                 href="./index.html#home_sub_section">Hakkımızda</a></li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
-                href="./index.html#contact">İletişim</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a href="#">İletişim</a>
+            </li>
           </ul>
         </div>
         <div id="btn-menu">
@@ -582,6 +584,29 @@
     </nav>
 
     <div id="transition"></div>
+    <div id="badge-reservation" data-bs-toggle="modal" data-bs-target="#reservationModal">
+      <a href="./reservation/index.html">
+        <div class="mb-2">
+          <img alt="" data-src="./wp-content//uploads/2022/09/Logo.png" class="lazy lazyload w-100 h-75 mb-2"
+            src="./wp-content//uploads/2022/09/Logo.png">
+        </div>
+        <div class="text">
+          <img class="lazy" src="./wp-content/uploads/2022/09/Rezervasyon.png" alt="">
+        </div>
+      </a>
+    </div>
+
+    <div id="badge-reservation-mobile" data-bs-toggle="modal" data-bs-target="#reservationModal">
+      <a href="./reservation/index.html">
+        <div class="logo">
+          <img alt="Logo La Nouba" data-src="./wp-content//uploads/2022/09/Logo.png" class="lazy lazyload"
+            src="./wp-content//uploads/2022/09/Logo.png">
+        </div>
+        <div class="text">
+          <span>rezervasyon</span>
+        </div>
+      </a>
+    </div>
 
     <header class="zones full">
       <div class="cover">
@@ -623,7 +648,7 @@
         <div class="title">
           <h2>BİZİMLE ÇALIŞMAK İSTER MİSİN?</h2>
         </div>
-        
+
       </div>
 
       <div id="booking" class="section">
@@ -652,7 +677,7 @@
                       </div>
                     </div>
 
-                     <div class="col-md-4">
+                    <div class="col-md-4">
                       <div class="form-group">
                         <span class="form-label">E-posta adresi</span>
                         <input class="form-control" name="phone" type="text" required placeholder="E-posta adresi">
@@ -671,7 +696,7 @@
                       </div>
                     </div>
 
-                     <div class="col-md-4">
+                    <div class="col-md-4">
                       <div class="form-group">
                         <span class="form-label">Fotoğraflı CV</span>
                         <input class="form-control" name="phone" type="file" required placeholder="E-posta adresi">
