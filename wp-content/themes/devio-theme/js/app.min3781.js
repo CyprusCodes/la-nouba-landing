@@ -240,12 +240,12 @@ jQuery(function () {
             console.log(e);
             var t = o.find('select[name="reservation-date"]').find("option");
             (t[0].innerHTML =
-              "fr-FR" === e ||
-              "fr-BE" === e ||
-              "fr" === e ||
-              "fr-CA" === e ||
-              "fr-CH" === e ||
-              "fr-LU" === e
+              "tr-TR" === e ||
+              "tr-BE" === e ||
+              "tr" === e ||
+              "tr-CA" === e ||
+              "tr-CH" === e ||
+              "tr-LU" === e
                 ? "Sélectionnez un événement"
                 : "nl" === e || "nl-BE" === e
                 ? "Kies een evenement"
@@ -253,12 +253,12 @@ jQuery(function () {
               ((t = o
                 .find('select[name="reservation-users"]')
                 .find("option"))[0].innerHTML =
-                "fr-FR" === e ||
-                "fr-BE" === e ||
-                "fr" === e ||
-                "fr-CA" === e ||
-                "fr-CH" === e ||
-                "fr-LU" === e
+                "tr-TR" === e ||
+                "tr-BE" === e ||
+                "tr" === e ||
+                "tr-CA" === e ||
+                "tr-CH" === e ||
+                "tr-LU" === e
                   ? "Nombre de personnes"
                   : "nl" === e || "nl-BE" === e
                   ? "Aantal personen"
