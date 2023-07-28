@@ -162,17 +162,17 @@
       <ul id="main-menu" class="navbar-nav">
         <li id="menu-item-190"
           class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-190"><a
-            href="index.html#events" aria-current="page">Etkinlikler</a></li>
+            href="index.html#events" aria-current="page" data-translate="etkinlikler">Etkinlikler</a></li>
         <li id="menu-item-290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a
-            href="gallery.html">Galeri</a></li>
+            href="gallery.html" data-translate="galeri">Galeri</a></li>
       </ul>
     </div>
     <div id="navbarNavDropdown" class="menu-main-right-container">
       <ul id="main-menu" class="navbar-nav">
         <li id="menu-item-289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a
-            rel="noopener" href="index.html#">Hakkımızda</a></li>
+            rel="noopener" href="index.html#" data-translate="hakkımızda">Hakkımızda</a></li>
         <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
-            href="./contact.html">İletişim</a></li>
+            href="./contact.html" data-translate="iletişim">İletişim</a></li>
       </ul>
     </div>
   </div>
@@ -193,9 +193,9 @@
         <div id="navbarNavDropdown" class="menu-main-left-container">
           <ul id="main-menu" class="navbar-nav">
             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-190"><a
-                href="index.html#events" aria-current="page">Etkinlikler</a></li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a
-                href="gallery.html">Galeri</a>
+                href="index.html#events" aria-current="page" data-translate="etkinlikler">Etkinlikler</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a href="gallery.html"
+                data-translate="galeri">Galeri</a>
             </li>
           </ul>
         </div>
@@ -209,9 +209,9 @@
         <div id="navbarNavDropdown" class="menu-main-right-container">
           <ul id="main-menu" class="navbar-nav">
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a rel="noopener"
-                href="#home_sub_section">Hakkımızda</a></li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
-                href="./contact.html">İletişim</a></li>
+                href="#home_sub_section" data-translate="hakkımızda">Hakkımızda</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a href="./contact.html"
+                data-translate="iletişim">İletişim</a></li>
           </ul>
         </div>
         <div id="btn-menu">
@@ -219,7 +219,26 @@
             <span></span>
           </div>
         </div>
+        <div class="dropdown  droplang language_button">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" aria-haspopup="true"
+            aria-expanded="false" onclick="toggleDropdownMenu()">
+            TR
+          </button>
+          <div class="dropdown-menu dropdown-container" aria-labelledby="dropdownMenuButton" id="lang">
+            <a class="dropdown-item dropdown-text" href="?lang=tr">TR</a>
+            <a class="dropdown-item dropdown-text" href="?lang=en">EN</a>
+            <a class="dropdown-item dropdown-text" href="?lang=ru">RU</a>
+          </div>
+        </div>
+
+        <script>
+          function toggleDropdownMenu() {
+            var dropdownMenu = document.getElementById("lang");
+            dropdownMenu.classList.toggle("show");
+          }
+        </script>
       </div>
+
     </nav>
 
     <div id="transition"></div>
@@ -1018,6 +1037,7 @@
   <script type='text/javascript'
     src='wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load-native.min4e6c.js?ver=3.12.6'
     id='smush-lazy-load-js'></script>
+  <script src="./index-translation.js"></script>
 </body>
 
 <!-- Mirrored from www.spiritobrussels.com/fr/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Jun 2023 09:12:52 GMT -->

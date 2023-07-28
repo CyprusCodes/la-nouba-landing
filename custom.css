@@ -1,3 +1,35 @@
+.language_button {
+  color: #fff !important;
+  width: 10%;
+  position: absolute;
+  left: -160%;
+}
+
+@media (max-width: 500px) {
+  .language_button {
+    color: #fff !important;
+    width: 10%;
+    position: fixed;
+    left: -370%;
+  }
+}
+
+/* Custom styles for the dropdown button */
+.dropdown.droplang.language_button .btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+
+/* Custom styles for the dropdown items */
+.dropdown-container {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.dropdown-text {
+  color: #fff !important;
+}
+
 .title {
   border-right: none !important;
 }
