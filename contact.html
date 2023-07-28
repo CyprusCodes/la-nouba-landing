@@ -428,12 +428,7 @@
   <script type='text/javascript' src='./wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4' id='jquery-core-js'></script>
   <script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min6b00.js?ver=3.4.0'
     id='jquery-migrate-js'></script>
-  <script type='text/javascript' id='wpml-cookie-js-extra'>
-    /* <![CDATA[ */
-    var wpml_cookies = { "wp-wpml_current_language": { "value": "fr", "expires": 1, "path": "\/" } };
-    var wpml_cookies = { "wp-wpml_current_language": { "value": "fr", "expires": 1, "path": "\/" } };
-/* ]]> */
-  </script>
+
   <script type='text/javascript'
     src='./wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie4698.js?ver=4.6.3'
     id='wpml-cookie-js'></script>
@@ -517,18 +512,18 @@
     <div id="navbarNavDropdown" class="menu-main-left-container">
       <ul id="main-menu" class="navbar-nav">
         <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><a
-            href="./index.html#events">Etkinlikler</a></li>
+            href="./index.html#events" data-translate="etkinlikler">Etkinlikler</a></li>
         <li id="menu-item-290"
           class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-290"><a
-            href="gallery.html" aria-current="page">Galeri</a></li>
+            href="gallery.html" aria-current="page" data-translate="galeri">Galeri</a></li>
       </ul>
     </div>
     <div id="navbarNavDropdown" class="menu-main-right-container">
       <ul id="main-menu" class="navbar-nav">
         <li id="menu-item-289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a
-            rel="noopener" href="./index.html#home_sub_section">Hakkımızda</a></li>
-        <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
-            href="#">İletişim</a></li>
+            rel="noopener" href="./index.html#home_sub_section" data-translate="hakkımızda">Hakkımızda</a></li>
+        <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a href="#"
+            data-translate="iletişim">İletişim</a></li>
       </ul>
     </div>
   </div>
@@ -554,9 +549,9 @@
         <div id="navbarNavDropdown" class="menu-main-left-container">
           <ul id="main-menu" class="navbar-nav">
             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-190"><a
-                href="./index.html#events" aria-current="page">Etkinlikler</a></li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a
-                href="gallery.html">Galeri</a>
+                href="./index.html#events" aria-current="page" data-translate="etkinlikler">Etkinlikler</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a href="gallery.html"
+                data-translate="galeri">Galeri</a>
             </li>
           </ul>
         </div>
@@ -570,8 +565,9 @@
         <div id="navbarNavDropdown" class="menu-main-right-container">
           <ul id="main-menu" class="navbar-nav">
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a rel="noopener"
-                href="./index.html#home_sub_section">Hakkımızda</a></li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a href="#">İletişim</a>
+                href="./index.html#home_sub_section" data-translate="hakkımızda">Hakkımızda</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a href="#"
+                data-translate="iletişim">İletişim</a>
             </li>
           </ul>
         </div>
@@ -580,6 +576,24 @@
             <span></span>
           </div>
         </div>
+        <div class="dropdown  droplang language_button">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" aria-haspopup="true"
+            aria-expanded="false" onclick="toggleDropdownMenu()">
+            TR
+          </button>
+          <div class="dropdown-menu dropdown-container" aria-labelledby="dropdownMenuButton" id="lang">
+            <a class="dropdown-item dropdown-text" href="?lang=tr">TR</a>
+            <a class="dropdown-item dropdown-text" href="?lang=en">EN</a>
+            <a class="dropdown-item dropdown-text" href="?lang=ru">RU</a>
+          </div>
+        </div>
+
+        <script>
+          function toggleDropdownMenu() {
+            var dropdownMenu = document.getElementById("lang");
+            dropdownMenu.classList.toggle("show");
+          }
+        </script>
       </div>
     </nav>
 
@@ -613,7 +627,7 @@
         <div class="cover__inner">
           <div class="section__header">
             <div class="title">
-              <h1>İLETİŞİM</h1>
+              <h1 data-translate="iletişim_title">İLETİŞİM</h1>
             </div>
           </div>
           <div class="blurbs">
@@ -646,10 +660,42 @@
     <section class="zones_section_1">
       <div class="section__header">
         <div class="title">
-          <h2>BİZİMLE ÇALIŞMAK İSTER MİSİN?</h2>
+          <h2 data-translate="çalışmak_ister_misiniz">BİZİMLE ÇALIŞMAK İSTER MİSİN?</h2>
         </div>
 
       </div>
+
+      <script>
+        let firstNameInput = document.getElementById('first_name_input');
+        let lastNameInput = document.getElementById('last_name_input');
+        let phoneInput = document.getElementById('phone_input');
+        let emailInput = document.getElementById('email_input');
+
+        function setPlaceholdersByLanguage() {
+          var dropdownMenu = document.getElementById("dropdownMenuButton");
+          if (dropdownMenu.textContent == "TR") {
+            firstNameInput.placeholder = 'İsim',
+              lastNameInput.placeholder = "Soyisim",
+              phoneInput.placeholder = "Telefon Numarası",
+              emailInput.placeholder = "E-posta adresi"
+          } else if (dropdownMenu.textContent == "EN") {
+            firstNameInput.placeholder = 'Name',
+              lastNameInput.placeholder = "Surname",
+              phoneInput.placeholder = "Phone Number",
+              emailInput.placeholder = "E-mail Address"
+          } else {
+            firstNameInput.placeholder = "Имя",
+              lastNameInput.placeholder = "Фамилия",
+              phoneInput.placeholder = "Номер телефона",
+              emailInput.placeholder = "E-mail адрес"
+          };
+        }
+
+        let dropdownMenu = document.getElementById("dropdownMenuButton");
+        dropdownMenu.addEventListener("change", setPlaceholdersByLanguage);
+
+        setPlaceholdersByLanguage();
+      </script>
 
       <div id="booking" class="section">
         <div class="section-center">
@@ -660,37 +706,41 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <span class="form-label">Adınız</span>
-                        <input class="form-control" type="text" name="last_name" required placeholder="İsim">
+                        <span class="form-label" data-translate="adı">Adınız</span>
+                        <input class="form-control" type="text" name="last_name" id="first_name_input" required
+                          placeholder="İsim">
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <span class="form-label">Soyadınız</span>
-                        <input class="form-control" name="soyisim" type="text" required placeholder="Soyisim">
+                        <span class="form-label" data-translate="soyadı">Soyadınız</span>
+                        <input class="form-control" name="soyisim" type="text" id="last_name_input" required
+                          placeholder="Soyisim">
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
-                        <span class="form-label">Telefon Numarası</span>
-                        <input class="form-control" name="phone" type="text" required placeholder="Telefon Numarası">
-                      </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <span class="form-label">E-posta adresi</span>
-                        <input class="form-control" name="phone" type="text" required placeholder="E-posta adresi">
+                        <span class="form-label" data-translate="telefon">Telefon Numarası</span>
+                        <input class="form-control" name="phone" type="text" id="phone_input" required
+                          placeholder="Telefon Numarası">
                       </div>
                     </div>
 
                     <div class="col-md-4">
                       <div class="form-group">
-                        <span class="form-label">Departman</span>
+                        <span class="form-label" data-translate="e_posta">E-posta adresi</span>
+                        <input class="form-control" name="phone" type="text" id="email_input" required
+                          placeholder="E-posta adresi">
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <span class="form-label" data-translate="departman">Departman</span>
                         <select class="form-control" name="kadin">
-                          <option value="Lütfen seçin">Lütfen seçin</option>
-                          <option value="Halkla İlişkiler">Halkla İlişkiler</option>
-                          <option value="Reklam ve Pazarlama">Reklam ve Pazarlama</option>
+                          <option value="Lütfen seçin" data-translate="lütfen_seç">Lütfen seçin</option>
+                          <option value="Halkla İlişkiler" data-translate="halkla_ilişkiler">Halkla İlişkiler</option>
+                          <option value="Reklam ve Pazarlama" data-translate="reklam">Reklam ve Pazarlama</option>
                         </select>
                         <span class="select-arrow"></span>
                       </div>
@@ -698,14 +748,14 @@
 
                     <div class="col-md-4">
                       <div class="form-group">
-                        <span class="form-label">Fotoğraflı CV</span>
+                        <span class="form-label" data-translate="foto_cv">Fotoğraflı CV</span>
                         <input class="form-control" name="phone" type="file" required placeholder="E-posta adresi">
                       </div>
                     </div>
 
                     <div class="col-md-12">
                       <div class="form-group">
-                        <span class="form-label">Açıklama</span>
+                        <span class="form-label" data-translate="açıklama">Açıklama</span>
                         <textarea class="form-control" cols="50" name="mesaj"></textarea>
                       </div>
                     </div>
@@ -1065,7 +1115,7 @@
       <div class="c__container__full full">
         <div class="copyright">
           <div class="c__container">
-            <p>La Nouba © 2023 - copyright reserved - by <a href="https://cypruscodes.com/"
+            <p data-translate="t_footer">La Nouba © 2023 - copyright reserved - by <a href="https://cypruscodes.com/"
                 target="_blank">CyprusCodes</a></p>
           </div>
         </div>
@@ -1126,6 +1176,7 @@
   <script type='text/javascript'
     src='./wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load-native.min4e6c.js?ver=3.12.6'
     id='smush-lazy-load-js'></script>
+  <script src="./contact-translation.js"></script>
 </body>
 
 

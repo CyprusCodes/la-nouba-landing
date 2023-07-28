@@ -9,7 +9,6 @@
   <meta name="apple-mobile-web-app-title" content="La Nouba - Kyrenia">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" type="text/css" href="../custom.css">
   <!-- Pages name -->
   <title>La Nouba - Kyrenia</title>
   <meta name="apple-mobile-web-app-title" content="La Nouba - Kyrenia">
@@ -492,6 +491,7 @@
     let config = { "init_aos": false, "init_slick": true, "init_sticky": false };
     // console.log(config);
   </script>
+  <link rel="stylesheet" type="text/css" href="../custom.css">
 </head>
 
 <body class="archive post-type-archive post-type-archive-zones wp-custom-logo">
@@ -523,6 +523,17 @@
         <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
             href="../contact.html">İletişim</a></li>
       </ul>
+    </div>
+    <div class="dropdown  droplang language_button">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" aria-haspopup="true"
+        aria-expanded="false" onclick="toggleDropdownMenu()">
+        TR
+      </button>
+      <div class="dropdown-menu dropdown-container" aria-labelledby="dropdownMenuButton" id="lang">
+        <a class="dropdown-item dropdown-text" href="?lang=tr">TR</a>
+        <a class="dropdown-item dropdown-text" href="?lang=en">EN</a>
+        <a class="dropdown-item dropdown-text" href="?lang=ru">RU</a>
+      </div>
     </div>
   </div>
 
@@ -573,6 +584,24 @@
             <span></span>
           </div>
         </div>
+        <div class="dropdown  droplang language_button">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" aria-haspopup="true"
+            aria-expanded="false" onclick="toggleDropdownMenu()">
+            TR
+          </button>
+          <div class="dropdown-menu dropdown-container" aria-labelledby="dropdownMenuButton" id="lang">
+            <a class="dropdown-item dropdown-text" href="?lang=tr">TR</a>
+            <a class="dropdown-item dropdown-text" href="?lang=en">EN</a>
+            <a class="dropdown-item dropdown-text" href="?lang=ru">RU</a>
+          </div>
+        </div>
+
+        <script>
+          function toggleDropdownMenu() {
+            var dropdownMenu = document.getElementById("lang");
+            dropdownMenu.classList.toggle("show");
+          }
+        </script>
       </div>
     </nav>
 
