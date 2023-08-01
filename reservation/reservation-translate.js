@@ -99,6 +99,27 @@ ozel_m: "Ваше особое сообщение (Bistro в бутылке, д�
 talebi_gonder: "Отправить запрос",
 t_footer: "La Nouba © 2023 - все права защищены - <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a>",
 };
+$.i18n.ua = {
+  lang_i: "UA",
+  etkinlikler: "Події",
+galeri: "Галерея",
+hakkımızda: "Про нас",
+iletişim: "Контакти",
+your_browser: "Ваш браузер не підтримує тег відео.",
+rezervasyon: "Бронювання",
+rezervasyon_p: "Чи хочете ви насолодитися привілейованим досвідом? Зробіть бронювання зараз.",
+etkin_sec: "Оберіть Подію",
+e_posta: "Адреса електронної пошти:",
+isim: "Ім'я",
+soyisim: "Прізвище",
+telefon: "Номер телефону",
+kadin: "Кількість жінок",
+erkek: "Кількість чоловіків",
+ozel_m: "Ваш спеціальний повідомлення (Bottled Bistro, День народження та інше)",
+talebi_gonder: "Надіслати запит",
+t_footer: "La Nouba © 2023 - Усі права захищено - від <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a>",
+};
+
 
 var i18n = $.i18n();
 
@@ -131,6 +152,12 @@ function setContactFormPlaceholders(lang) {
     $('input[name="soyisim"]').attr("placeholder", "Soyisim");
     $('input[name="phone"]').attr("placeholder", "Telefon Numarası");
     $('textarea[name="mesaj"]').attr("placeholder", "mesaj");
+  } else if (lang === "ua") {
+    $('input[name="email"]').attr("placeholder", "приклад@приклад.com");
+$('input[name="isim"]').attr("placeholder", "Ім'я");
+$('input[name="soyisim"]').attr("placeholder", "Прізвище");
+$('input[name="phone"]').attr("placeholder", "Номер телефону");
+$('textarea[name="mesaj"]').attr("placeholder", "повідомлення");
   } else {
     $('input[name="email"]').attr("placeholder", "example@exmple.com");
 $('input[name="isim"]').attr("placeholder", "Имя");

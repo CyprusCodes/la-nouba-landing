@@ -135,3 +135,18 @@
 section.zones_section_1 .section__header{
     margin-bottom: 20px !important;
 }
+@media (min-width: 1025px) {
+    .c_show{
+        margin-right: 8rem !important;
+    }
+}
+@media (max-width: 1024px) {
+    .c_show{
+        margin-right: 5rem !important;
+    }
+}
+@media (max-width: 768px) {
+    .c_show{
+        margin-right: 15px !important;
+    }
+}
