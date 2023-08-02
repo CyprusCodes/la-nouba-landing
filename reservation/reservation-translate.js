@@ -140,30 +140,32 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 function setContactFormPlaceholders(lang) {
-  if (lang === "en") {
-    $('input[name="email"]').attr("placeholder", "example@exmple.com");
-    $('input[name="name"]').attr("placeholder", "Name");
-    $('input[name="fullName"]').attr("placeholder", "Full Name");
-    $('input[name="phone"]').attr("placeholder", "Phone Number");
-    $('textarea[name="mesaj"]').attr("placeholder", "Message");
-  } else if (lang === "tr") {
-    $('input[name="email"]').attr("placeholder", "example@exmple.com");
-    $('input[name="name"]').attr("placeholder", "İsim");
-    $('input[name="fullName"]').attr("placeholder", "Soyisim");
-    $('input[name="phone"]').attr("placeholder", "Telefon Numarası");
-    $('textarea[name="mesaj"]').attr("placeholder", "mesaj");
+  if (lang === "ru") {
+    $('input[name="name"]').attr("placeholder", "example@exmple.com");
+    $('input[name="isim"]').attr("placeholder", "Имя");
+    $('input[name="soyisim"]').attr("placeholder", "Фамилия");
+    $('input[name="phone"]').attr("placeholder", "Номер телефона");
+    $('textarea[name="mesaj"]').attr("placeholder", "сообщение");
   } else if (lang === "ua") {
-    $('input[name="email"]').attr("placeholder", "приклад@приклад.com");
-$('input[name="name"]').attr("placeholder", "Ім'я");
-$('input[name="fullName"]').attr("placeholder", "Прізвище");
+    $('input[name="name"]').attr("placeholder", "приклад@приклад.com");
+$('input[name="isim"]').attr("placeholder", "Ім'я");
+$('input[name="soyisim"]').attr("placeholder", "Прізвище");
 $('input[name="phone"]').attr("placeholder", "Номер телефону");
 $('textarea[name="mesaj"]').attr("placeholder", "повідомлення");
-  } else {
-    $('input[name="email"]').attr("placeholder", "example@exmple.com");
-$('input[name="name"]').attr("placeholder", "Имя");
-$('input[name="fullName"]').attr("placeholder", "Фамилия");
-$('input[name="phone"]').attr("placeholder", "Номер телефона");
-$('textarea[name="mesaj"]').attr("placeholder", "сообщение");
+  }
+  else if (lang === "en") {
+    $('input[name="name"]').attr("placeholder", "example@exmple.com");
+    $('input[name="isim"]').attr("placeholder", "Name");
+    $('input[name="soyisim"]').attr("placeholder", "Full Name");
+    $('input[name="phone"]').attr("placeholder", "Phone Number");
+    $('textarea[name="mesaj"]').attr("placeholder", "Message");
+  } 
+  else {
+    $('input[name="name"]').attr("placeholder", "example@exmple.com");
+    $('input[name="isim"]').attr("placeholder", "İsim");
+    $('input[name="soyisim"]').attr("placeholder", "Soyisim");
+    $('input[name="phone"]').attr("placeholder", "Telefon Numarası");
+    $('textarea[name="mesaj"]').attr("placeholder", "mesaj");
   }
 }
 
