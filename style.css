@@ -388,3 +388,38 @@ figure.wp-block-image img.lazyloading {
   width: 15%;
   height: 15%;
 }
+
+.act_blurb{
+  color: #fff;
+  font-family: Bellefair;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.socials_m{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+  color: #d3aa7a;
+}
+.socials_m a{
+  color: #d3aa7a;
+  font-size: 24px;
+}
+.socials_m a :hover{
+  color: #fff;
+  font-size: 30px;
+}
+
+.colored-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.colored-list li::before {
+  content: "• ";
+  color: #d3aa7a;
+  font-size: 35px;
+}
