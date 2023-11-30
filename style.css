@@ -423,3 +423,7 @@ figure.wp-block-image img.lazyloading {
   color: #d3aa7a;
   font-size: 35px;
 }
+
+#hu{
+  display: none !important;
+}
