@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #e9e9e9;
+      }
+
+      .gallery {
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+      }
+      .event-item{
+        width: 10rem !important;
+        /* height: 10rem !important; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .event-item img{
+        width: 10rem !important;
+        height: 10rem !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="eventList" class="gallery"></div>
+    <!--  <section>
+      <div class="gallery" id="gallery">
+        <img
+          src="https://images.pexels.com/photos/60163/pexels-photo-60163.jpeg"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/159613/ghettoblaster-radio-recorder-boombox-old-school-159613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/1002669/pexels-photo-1002669.jpeg"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/7810405/pexels-photo-7810405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/5699509/pexels-photo-5699509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/7162533/pexels-photo-7162533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/3808904/pexels-photo-3808904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/3944091/pexels-photo-3944091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/821738/pexels-photo-821738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        /> 
+      </div>
+    </section> -->
+    <script src="/events.js"></script>
+  </body>
+</html>
