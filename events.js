@@ -10,7 +10,7 @@ const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tq=
 fetch(FULL_URL)
   .then((res) => res.text())
   .then((csvData) => {
-    console.log('CSV Data:', csvData);
+    console.log("CSV Data:", csvData);
     let rows = csvData.split("\n");
     let data = rows.map((row) => row.split('","'));
     // Extract headers from the first row
@@ -19,8 +19,8 @@ fetch(FULL_URL)
     // Get the parent element to which we'll add event items
     const eventList = document.getElementById("eventList");
 
-    // Iterate through the rows (excluding the header row)
-    for (let i = 1; i < data.length; i++) {
+    // Iterate through the rows (excluding the header row) in reverse order
+    for (let i = data.length - 1; i > 0; i--) {
       const rowData = data[i].map((value) => value.replace(/"/g, ""));
 
       // Create a div for each event
@@ -43,7 +43,7 @@ fetch(FULL_URL)
 
       // Add other details to the eventDiv (e.g., event title, event id)
       eventDiv.innerHTML += `<h1>${obj.event_title}</h1>`;
-    //   eventDiv.innerHTML += `<p>Event ID: ${obj.event_id}</p>`;
+      //   eventDiv.innerHTML += `<p>Event ID: ${obj.event_id}</p>`;
 
       // Append the eventDiv to the parent element
       eventList.appendChild(eventDiv);
