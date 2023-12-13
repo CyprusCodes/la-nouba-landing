@@ -41,6 +41,27 @@
     nav.navbar {
       z-index: 1 !important;
     }
+    .gallery_conteiner{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+  margin-bottom: 30px;
+}
+@media (min-width: 768px){
+  .gallery_conteiner{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px){
+  .gallery_conteiner{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
   </style>
 </head>
 
@@ -155,7 +176,7 @@
           2023</h2>
       </div>
       
-      <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+      <div class="gallery_conteiner">
         <div class="image">
           <a href="./assets/uploads/375863273_644164294563761_6924385014204727753_n.jpg" data-lightbox="image-1" data-title="My caption">
             <img src="./assets/uploads/375863273_644164294563761_6924385014204727753_n.jpg" alt="/assets/uploads/375863273_644164294563761_6924385014204727753_n.jpg" class="lazy lazyload">
@@ -177,8 +198,7 @@
           </a>
         </div>
         
-      </div>
-      <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+
         <div class="image">
           <a href="./assets/uploads/375971901_644160754564115_6328523733662845581_n.jpg" data-lightbox="image-1" data-title="My caption">
             <img src="./assets/uploads/375971901_644160754564115_6328523733662845581_n.jpg" alt="./assets/uploads/375971901_644160754564115_6328523733662845581_n.jpg" class="lazy lazyload">
@@ -200,56 +220,7 @@
           </a>
         </div>
         
-      </div>
-      <div style="display: flex; gap: 20px; margin-bottom: 30px;">
-        <div class="image">
-          <a href="./assets/uploads/omer evre post copy2.jpg" data-lightbox="image-1" data-title="My caption">
-            <img src="./assets/uploads/omer evre post copy2.jpg" alt="/assets/uploads/omer evre post copy2.jpg" class="lazy lazyload">
-          </a>
-        </div>
-        <div class="image">
-          <a href="./assets/uploads/lanouba deniz tekin copy.jpg" data-lightbox="image-1" data-title="My caption">
-            <img src="./assets/uploads/lanouba deniz tekin copy.jpg" alt="/assets/uploads/lanouba deniz tekin copy.jpg" class="lazy lazyload">
-          </a>
-        </div>
-        <div class="image">
-          <a href="./assets/uploads/20th friday 2.jpg" data-lightbox="image-1" data-title="My caption">
-            <img src="./assets/uploads/20th friday 2.jpg" alt="" class="lazy lazyload">
-          </a>
-        </div>
-        <div class="image">
-          <a href="./assets/uploads/30.jpg" data-lightbox="image-1" data-title="My caption">
-            <img src="./assets/uploads/30.jpg" alt="/assets/uploads/30.jpg" class="lazy lazyload">
-          </a>
-        </div>
-        
-      </div>
-      <div style="display: flex; gap: 20px; margin-bottom: 30px;">
-        <div class="image">
-          <a href="./assets/uploads/7TH.jpg" data-lightbox="image-1" data-title="My caption">
-            <img src="./assets/uploads/7TH.jpg" alt="/assets/uploads/7TH.jpg" class="lazy lazyload">
-          </a>
-        </div>
-        <div class="image">
-          <a href="./assets/uploads/14AUG-LANOUBA main 1 copy.jpg" data-lightbox="image-1" data-title="My caption">
-            <img src="./assets/uploads/14AUG-LANOUBA main 1 copy.jpg" alt="/assets/uploads/14AUG-LANOUBA main 1 copy.jpg" class="lazy lazyload">
-          </a>
-        </div>
-        <div class="image">
-          <a href="./assets/uploads/ckay copy.jpg" data-lightbox="image-1" data-title="My caption">
-            <img src="./assets/uploads/ckay copy.jpg" alt="/assets/uploads/ckay copy.jpg" class="lazy lazyload">
-          </a>
-        </div>
-        <div class="image">
-          <a href="./assets/uploads/17.9.21.jpg" data-lightbox="image-1" data-title="My caption">
-            <img src="./assets/uploads/17.9.21.jpg" alt="/assets/uploads/" class="lazy lazyload">
-          </a>
-        </div>
-        
-      </div>
       
-     
-      <div style="display: flex; gap: 20px; margin-bottom: 30px;">
         <div class="image">
           <a href="./assets/2023/1.jpg" data-lightbox="image-1" data-title="My caption">
             <img src="./assets/2023/1.jpg" class="lazy lazyload" />
@@ -270,8 +241,7 @@
             <img src="./assets/2023/4.jpg" class="lazy lazyload" />
           </a>
         </div>
-      </div>
-      <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+      
         <div class="image">
           <a href="./assets/2023/5.jpg" data-lightbox="image-1" data-title="My caption">
             <img src="./assets/2023/5.jpg" class="lazy lazyload" />
@@ -292,8 +262,7 @@
             <img src="./assets/2023/8.jpg" class="lazy lazyload" />
           </a>
         </div>
-      </div>
-      <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+      
         <div class="image">
           <a href="./assets/2023/9.jpg" data-lightbox="image-1" data-title="My caption">
             <img src="./assets/2023/9.jpg" class="lazy lazyload" />
@@ -316,7 +285,7 @@
         </div>
       </div>
 
-      <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+      <div class="gallery_conteiner">
         <div class="image">
           <a href="./assets/2023/13.jpg" data-lightbox="image-1" data-title="My caption">
             <img src="./assets/2023/13.jpg" class="lazy lazyload" />
@@ -349,7 +318,7 @@
         <h2 style="    color: #fff; font-size: 60px; text-align: center; margin-bottom: 30px;">SUMMER 2022</h2>
       </div>
       
-      <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+      <div class="gallery_conteiner">
         <div class="image">
           <a href="./assets/2022/1.jpg" data-lightbox="image-1" data-title="My caption">
             <img src="./assets/2022/1.jpg" class="lazy lazyload" />
@@ -370,8 +339,7 @@
             <img src="./assets/2022/4.jpg" class="lazy lazyload" />
           </a>
         </div>
-      </div>
-      <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+      
         <div class="image">
           <a href="./assets/2022/5.jpg" data-lightbox="image-1" data-title="My caption">
             <img src="./assets/2022/5.jpg" class="lazy lazyload" />
@@ -392,8 +360,7 @@
             <img src="./assets/2022/8.jpg" class="lazy lazyload" />
           </a>
         </div>
-      </div>
-      <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+      
         <div class="image">
           <a href="./assets/2022/9.jpg" data-lightbox="image-1" data-title="My caption">
             <img src="./assets/2022/9.jpg" class="lazy lazyload" />
@@ -479,12 +446,11 @@
     </footer>
   </div>
   <script>
-    // Add a click event handler to the anchor tags
     $('a[data-lightbox="image-1"]').on('click', function (event) {
-      event.preventDefault(); // Prevent the default click behavior
+      event.preventDefault(); 
 
       var imageSrc = $(this).attr('href');
-      // Trigger Lightbox2 manually with the image source
+      
       Lightbox2.open(imageSrc);
     });
   </script>
