@@ -446,12 +446,11 @@
     </footer>
   </div>
   <script>
-    // Add a click event handler to the anchor tags
     $('a[data-lightbox="image-1"]').on('click', function (event) {
-      event.preventDefault(); // Prevent the default click behavior
+      event.preventDefault(); 
 
       var imageSrc = $(this).attr('href');
-      // Trigger Lightbox2 manually with the image source
+      
       Lightbox2.open(imageSrc);
     });
   </script>
