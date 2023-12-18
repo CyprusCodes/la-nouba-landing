@@ -44,16 +44,18 @@
     .none{
       display: none !important;
     }
-    .figure {
-    height: 50rem;
-    margin: 0;
-    width: 80rem;
-}
-.figure iframe{
+.figure iframe#iframe_video{
   display: block;
-    height: 50rem;
-    width: 80rem;
+  width: 90%;
+    height: 60%;
     border-radius: 0.75rem;
+}
+.pop_up, .pop_up_content, .figure{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 .gallery_conteiner{
   display: flex; 
@@ -128,7 +130,7 @@
     <div id="navbarNavDropdown" class="menu-main-right-container">
       <ul id="main-menu" class="navbar-nav">
         <li id="menu-item-289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a
-            rel="noopener" href="index.html">Hakkımızda</a></li>
+            rel="noopener" href="about.html">Hakkımızda</a></li>
         <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
             href="./contact.html">İletişim</a></li>
       </ul>
@@ -169,7 +171,7 @@
         <div id="navbarNavDropdown" class="menu-main-right-container">
           <ul id="main-menu" class="navbar-nav">
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a rel="noopener"
-                href="index.html">Hakkımızda</a></li>
+              href="about.html">Hakkımızda</a></li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
                 href="./contact.html">İletişim</a></li>
           </ul>
@@ -187,7 +189,7 @@
     <section id="pop_up_section" class="pop_up_section none">
         <div class="pop_up">
             <div class="pop_up_content">
-                <figure class="">
+                <figure class="figure">
                   <iframe id="iframe_video" width="560" height="315"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share muted" allowfullscreen></iframe>
                 </figure>
                 <!-- <video src="https://fb.watch/oV5JrDtSB6/"></video> -->
