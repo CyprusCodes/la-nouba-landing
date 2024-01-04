@@ -2,15 +2,23 @@
   color: #fff !important;
   width: 10%;
   position: absolute;
-  left: -160%;
+  /* left: -160%; */
 }
 
-@media (max-width: 500px) {
+@media (min-width: 768px) {
   .language_button {
     color: #fff !important;
     width: 10%;
     position: fixed;
-    left: -370%;
+    /* left: -120%; */
+  }
+}
+@media (min-width: 858px) {
+  .language_button {
+    color: #fff !important;
+    width: 10%;
+    position: fixed;
+    /* left: -100%; */
   }
 }
 

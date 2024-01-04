@@ -10542,8 +10542,8 @@ span.avoidwrap {
 }
 @media (max-width: 991.98px) {
   .c__container__full.full {
-    width: calc(100% - 200px);
-    max-width: calc(100% - 200px);
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
   }
 }
 @media (max-width: 575.98px) {
@@ -12600,7 +12600,7 @@ section.contact .blurbs .blurb:last-child {
 }
 @media screen and (max-width: 1025px) {
   section.contact .blurbs .blurb:last-child {
-    width: calc(100% - 330px);
+    width: calc(100% - 30px);
   }
 }
 @media (max-width: 767.98px) {
