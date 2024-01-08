@@ -64,7 +64,7 @@
 }
 
 .booking-form .form-control:focus {
-    border-color: #ef5e5e;
+    border-color: #fffff;
 }
 
 .booking-form input[type="date"].form-control:invalid {
@@ -102,7 +102,7 @@
 }
 
 .booking-form select.form-control:focus+.select-arrow {
-    background: #ef5e5e;
+    background: #fffff;
     color: #fff;
 }
 
@@ -111,7 +111,7 @@
     font-weight: 700;
     margin-bottom: 3px;
     display: inline-block;
-    color: #ef5e5e;
+    color: #fffff;
     text-transform: capitalize;
 }
 
@@ -121,7 +121,7 @@
 
 .booking-form .submit-btn {
     color: #fff;
-    background-color: #ef5e5e;
+    background-color: #fffff;
     font-weight: 700;
     height: 50px;
     border: none;

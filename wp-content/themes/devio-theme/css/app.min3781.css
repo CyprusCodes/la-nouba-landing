@@ -10365,7 +10365,7 @@ ul {
   background-size: cover;
 }
 .bg__primary {
-  background-color: #ef5e5e;
+  background-color: #fffff;
 }
 .bg__primary .section__header .smalltitle .h2,
 .bg__primary .section__header .smalltitle .h3,
@@ -10387,7 +10387,7 @@ span[class*="separator"] {
   margin-right: auto;
   margin-bottom: 30px;
   display: flex;
-  background-color: #ef5e5e;
+  background-color: #fffff;
 }
 span[class*="separator"]:last-child {
   margin-bottom: 0;
@@ -10616,7 +10616,7 @@ span.avoidwrap {
   display: none;
   transform: scale(1);
   transition: all 0.2s ease-in-out;
-  background: #ef5e5e;
+  background: #fffff;
   border: 0;
   border-radius: 50px;
 }
@@ -10649,7 +10649,7 @@ span.avoidwrap {
   .cursor-dot {
     width: 8px;
     height: 8px;
-    background-color: #ef5e5e;
+    background-color: #fffff;
   }
   .cursor-dot-outline {
     width: 40px;
@@ -10682,7 +10682,7 @@ span.avoidwrap {
   top: 0;
   z-index: 10;
   transition: all 0.2s ease-in-out;
-  background-color: #ef5e5e;
+  background-color: #fffff;
 }
 .image[data-animate="image-clip"] .image__container.anim:after {
   -webkit-animation-name: f;
@@ -10885,8 +10885,8 @@ span.avoidwrap {
 .submit button.primary,
 .submit input.primary {
   padding-bottom: 10px;
-  border-bottom: 1px solid #ef5e5e;
-  color: #ef5e5e;
+  border-bottom: 1px solid #fffff;
+  color: #fffff;
   font-size: 18px;
   font-weight: 400;
   font-family: Bellefair;
@@ -10919,7 +10919,7 @@ span.avoidwrap {
   border-radius: 0;
   border-width: 1px;
   border-style: solid;
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 16px;
   font-weight: 400;
   font-family: Bellefair;
@@ -10958,8 +10958,8 @@ span.avoidwrap {
 .submit a.btn.btn-primary,
 .submit button.btn.btn-primary,
 .submit input.btn.btn-primary {
-  background-color: #ef5e5e !important;
-  border-color: #ef5e5e !important;
+  background-color: #fffff !important;
+  border-color: #fffff !important;
   color: #fff !important;
 }
 .buttons a.btn.btn-primary:active,
@@ -11007,8 +11007,8 @@ span.avoidwrap {
 .submit button.btn.btn-primary[class*="outline"],
 .submit input.btn.btn-primary[class*="outline"] {
   background-color: transparent !important;
-  border-color: #ef5e5e !important;
-  color: #ef5e5e !important;
+  border-color: #fffff !important;
+  color: #fffff !important;
 }
 .buttons a.btn.btn-primary[class*="outline"]:active,
 .buttons a.btn.btn-primary[class*="outline"]:focus,
@@ -11040,8 +11040,8 @@ span.avoidwrap {
 .submit input.btn.btn-primary[class*="outline"]:active,
 .submit input.btn.btn-primary[class*="outline"]:focus,
 .submit input.btn.btn-primary[class*="outline"]:hover {
-  background-color: #ef5e5e !important;
-  border-color: #ef5e5e !important;
+  background-color: #fffff !important;
+  border-color: #fffff !important;
   box-shadow: none;
   color: #fff !important;
 }
@@ -11055,8 +11055,8 @@ span.avoidwrap {
 .submit a.btn.btn-outline-primary,
 .submit button.btn.btn-outline-primary,
 .submit input.btn.btn-outline-primary {
-  background-color: #ef5e5e !important;
-  border-color: #ef5e5e !important;
+  background-color: #fffff !important;
+  border-color: #fffff !important;
   color: #fff !important;
 }
 .buttons a.btn.btn-outline-primary:active,
@@ -11104,8 +11104,8 @@ span.avoidwrap {
 .submit button.btn.btn-outline-primary[class*="outline"],
 .submit input.btn.btn-outline-primary[class*="outline"] {
   background-color: transparent !important;
-  border-color: #ef5e5e !important;
-  color: #ef5e5e !important;
+  border-color: #fffff !important;
+  color: #fffff !important;
 }
 .buttons a.btn.btn-outline-primary[class*="outline"]:active,
 .buttons a.btn.btn-outline-primary[class*="outline"]:focus,
@@ -11137,8 +11137,8 @@ span.avoidwrap {
 .submit input.btn.btn-outline-primary[class*="outline"]:active,
 .submit input.btn.btn-outline-primary[class*="outline"]:focus,
 .submit input.btn.btn-outline-primary[class*="outline"]:hover {
-  background-color: #ef5e5e !important;
-  border-color: #ef5e5e !important;
+  background-color: #fffff !important;
+  border-color: #fffff !important;
   box-shadow: none;
   color: #fff !important;
 }
@@ -11348,7 +11348,7 @@ span.avoidwrap {
 .submit input.btn.btn-light {
   background-color: #fff !important;
   border-color: #fff !important;
-  color: #ef5e5e !important;
+  color: #fffff !important;
 }
 .buttons a.btn.btn-light:active,
 .buttons a.btn.btn-light:focus,
@@ -11431,7 +11431,7 @@ span.avoidwrap {
   background-color: #fff !important;
   border-color: #fff !important;
   box-shadow: none;
-  color: #ef5e5e !important;
+  color: #fffff !important;
 }
 .section__header {
   margin-bottom: 50px;
@@ -11450,7 +11450,7 @@ span.avoidwrap {
 .section__header .title .h2,
 .section__header .title h1,
 .section__header .title h2 {
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 48px;
   font-weight: 400;
   font-family: Bellefair;
@@ -11485,7 +11485,7 @@ span.avoidwrap {
 .section__header .smalltitle .h3,
 .section__header .smalltitle h2,
 .section__header .smalltitle h3 {
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 30px;
   font-weight: 400;
   font-family: Bellefair;
@@ -11514,7 +11514,7 @@ span.avoidwrap {
   text-transform: uppercase;
 }
 .section__header .text p a {
-  color: #ef5e5e;
+  color: #fffff;
 }
 .section__header .text p:last-child {
   margin-bottom: 0;
@@ -11532,7 +11532,7 @@ ul.socials li:last-child {
   margin-right: 0;
 }
 ul.socials li a {
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 18px;
 }
 ul.socials li a:hover {
@@ -11543,7 +11543,7 @@ ul.socials li a:hover {
   padding: 0;
   position: relative;
   background-color: #1c1c1c;
-  border: 0 solid #ef5e5e;
+  border: 0 solid #fffff;
   box-shadow: none;
   border-radius: 0;
 }
@@ -11580,7 +11580,7 @@ ul.socials li a:hover {
 .form .wpcf7 .form-group input {
   padding: 10px 15px;
   background-color: #1c1c1c;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
   box-shadow: none;
   border-radius: 0;
   color: #fff;
@@ -11596,7 +11596,7 @@ ul.socials li a:hover {
 .form .wpcf7 .form-group textarea {
   padding: 10px 15px;
   background-color: #1c1c1c;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
   box-shadow: none;
   border-radius: 0;
   color: #fff;
@@ -11612,7 +11612,7 @@ ul.socials li a:hover {
 .form .wpcf7 .form-group select {
   padding: 10px 15px;
   background-color: #1c1c1c;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
   box-shadow: none;
   border-radius: 0;
   color: #fff;
@@ -11664,8 +11664,8 @@ ul.socials li a:hover {
   border: 1px solid #dcdcdc;
 }
 .form .wpcf7 .radio-group .wpcf7-acceptance label .checkbox.checked {
-  background: #ef5e5e;
-  border-color: #ef5e5e;
+  background: #fffff;
+  border-color: #fffff;
 }
 .form .wpcf7 .radio-group .wpcf7-acceptance label .checkbox.checked .fa-check {
   opacity: 1;
@@ -11686,10 +11686,10 @@ ul.socials li a:hover {
   text-transform: uppercase;
 }
 .form .wpcf7 .radio-group .wpcf7-acceptance label a {
-  background: #ef5e5e;
+  background: #fffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #ef5e5e;
+  color: #fffff;
   font-family: Bellefair;
   font-size: 16px;
   font-weight: 300;
@@ -11708,8 +11708,8 @@ ul.socials li a:hover {
   margin-right: 0;
 }
 .form .wpcf7 .submit input.btn.btn-primary {
-  background-color: #ef5e5e !important;
-  border-color: #ef5e5e !important;
+  background-color: #fffff !important;
+  border-color: #fffff !important;
   color: #fff !important;
 }
 .form .wpcf7 .submit input.btn.btn-primary:active,
@@ -11721,14 +11721,14 @@ ul.socials li a:hover {
 }
 .form .wpcf7 .submit input.btn.btn-primary[class*="outline"] {
   background-color: transparent !important;
-  border-color: #ef5e5e !important;
-  color: #ef5e5e !important;
+  border-color: #fffff !important;
+  color: #fffff !important;
 }
 .form .wpcf7 .submit input.btn.btn-primary[class*="outline"]:active,
 .form .wpcf7 .submit input.btn.btn-primary[class*="outline"]:focus,
 .form .wpcf7 .submit input.btn.btn-primary[class*="outline"]:hover {
-  background-color: #ef5e5e !important;
-  border-color: #ef5e5e !important;
+  background-color: #fffff !important;
+  border-color: #fffff !important;
   box-shadow: none;
   color: #fff !important;
 }
@@ -11750,7 +11750,7 @@ ul.socials li a:hover {
   align-items: center;
   opacity: 0;
   transition: all 0.2s ease-in-out;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(28, 28, 28, 0.1);
@@ -11767,7 +11767,7 @@ ul.socials li a:hover {
 }
 .form .wpcf7 form.invalid .wpcf7-response-output,
 .form .wpcf7 form.sent .wpcf7-response-output {
-  border-color: #ef5e5e;
+  border-color: #fffff;
 }
 .cards {
   width: 100%;
@@ -11805,7 +11805,7 @@ ul.socials li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(0deg, #ef5e5e, #24678d);
+  background: -webkit-linear-gradient(0deg, #fffff, #24678d);
   border-radius: 50px;
   color: #fff;
   font-size: 20px;
@@ -11877,7 +11877,7 @@ ul.socials li a:hover {
 .cards .card .card__body .title .h4 a,
 .cards .card .card__body .title h4,
 .cards .card .card__body .title h4 a {
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 24px;
   font-weight: 600;
   font-family: Bellefair;
@@ -11956,7 +11956,7 @@ ul.slick-dots li:last-child {
   margin-right: 0;
 }
 ul.slick-dots li.slick-active button {
-  background-color: #ef5e5e;
+  background-color: #fffff;
 }
 ul.slick-dots li button {
   width: 6px;
@@ -12077,8 +12077,8 @@ ul.slick-dots li button:before:hover {
   white-space: normal;
 }
 #cookie-notice .cookie-notice-container #cn-accept-cookie.btn-primary {
-  background-color: #ef5e5e !important;
-  border-color: #ef5e5e !important;
+  background-color: #fffff !important;
+  border-color: #fffff !important;
   color: #fff !important;
 }
 #cookie-notice .cookie-notice-container #cn-accept-cookie.btn-primary:active,
@@ -12092,8 +12092,8 @@ ul.slick-dots li button:before:hover {
   .cookie-notice-container
   #cn-accept-cookie.btn-primary[class*="outline"] {
   background-color: transparent !important;
-  border-color: #ef5e5e !important;
-  color: #ef5e5e !important;
+  border-color: #fffff !important;
+  color: #fffff !important;
 }
 #cookie-notice
   .cookie-notice-container
@@ -12104,8 +12104,8 @@ ul.slick-dots li button:before:hover {
 #cookie-notice
   .cookie-notice-container
   #cn-accept-cookie.btn-primary[class*="outline"]:hover {
-  background-color: #ef5e5e !important;
-  border-color: #ef5e5e !important;
+  background-color: #fffff !important;
+  border-color: #fffff !important;
   box-shadow: none;
   color: #fff !important;
 }
@@ -12171,7 +12171,7 @@ ul.slick-dots li button:before:hover {
   }
 }
 #cookie-notice .cookie-notice-container #cn-more-info:hover {
-  color: #ef5e5e;
+  color: #fffff;
 }
 #cookie-notice .cookie-notice-container #cn-more-info:before {
   content: "\f129";
@@ -12445,7 +12445,7 @@ nav.navbar .right #navbarNavDropdown ul.navbar-nav li.menu-item a {
 }
 #menu #navbarNavDropdown ul.navbar-nav li.menu-item a:hover {
   margin-right: 5px;
-  color: #ef5e5e;
+  color: #fffff;
 }
 #menu #navbarNavDropdown ul.navbar-nav li.menu-item a:hover:before {
   right: -103px;
@@ -12473,7 +12473,7 @@ nav.navbar .right #navbarNavDropdown ul.navbar-nav li.menu-item a {
   align-items: center;
   border-width: 1px 0 1px 1px;
   border-radius: 50px 0 0 50px;
-  border-color: #ef5e5e;
+  border-color: #fffff;
   border-style: solid;
   background-color: rgba(28, 28, 28, 0.5);
 }
@@ -12494,7 +12494,7 @@ nav.navbar .right #navbarNavDropdown ul.navbar-nav li.menu-item a {
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 400;
-  color: #ef5e5e;
+  color: #fffff;
 }
 #badge-reservation {
   width: 140px;
@@ -12631,7 +12631,7 @@ section.contact .section__header .title:after {
   top: 50%;
   right: -200px;
   transform: translateY(-50%);
-  background-color: #ef5e5e;
+  background-color: #fffff;
 }
 @media screen and (max-width: 1280px) {
   section.contact .section__header .title:after {
@@ -12716,7 +12716,7 @@ section.contact ul.informations li.information__item:last-child {
 section.contact ul.informations li.information__item span.title {
   margin-bottom: 10px;
   display: flex;
-  color: #ef5e5e;
+  color: #fffff;
   font-family: Bellefair;
   font-size: 20px;
   line-height: 25px;
@@ -12767,7 +12767,7 @@ section.contact ul.informations li.information__item ul.socials li:last-child {
   margin-right: 0;
 }
 section.contact ul.informations li.information__item ul.socials li a {
-  color: #ef5e5e;
+  color: #fffff;
   font-family: Bellefair;
   font-size: 18px;
   line-height: 25px;
@@ -12800,7 +12800,7 @@ section.sidebar {
 }
 section.sidebar .c__container__full {
   padding-top: 100px;
-  border-top: 1px solid #ef5e5e;
+  border-top: 1px solid #fffff;
 }
 @media (max-width: 575.98px) {
   section.sidebar .c__container__full {
@@ -12904,7 +12904,7 @@ section.sidebar .blurbs .blurb #policyNav ul#policy-menu li a {
   font-family: Bellefair;
 }
 section.sidebar .blurbs .blurb #policyNav ul#policy-menu li a:hover {
-  color: #ef5e5e;
+  color: #fffff;
 }
 @media screen and (max-width: 1280px) {
   section.sidebar .blurbs .blurb #footerNav {
@@ -12938,7 +12938,7 @@ section.sidebar .blurbs .blurb #footerNav ul#footer-menu li a {
   text-transform: uppercase;
 }
 section.sidebar .blurbs .blurb #footerNav ul#footer-menu li a:hover {
-  color: #ef5e5e;
+  color: #fffff;
 }
 section.sidebar .blurbs .blurb .form {
   max-width: 450px;
@@ -12962,7 +12962,7 @@ section.sidebar .blurbs .blurb .form .form-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
   border-radius: 50px;
 }
 section.sidebar .blurbs .blurb .form .form-group input {
@@ -12985,8 +12985,8 @@ section.sidebar .blurbs .blurb .form .form-group button {
   align-items: center;
   background-color: transparent;
   border-radius: 50px;
-  border: 1px solid #ef5e5e;
-  color: #ef5e5e;
+  border: 1px solid #fffff;
+  color: #fffff;
 }
 footer {
   background-color: #1c1c1c;
@@ -13039,7 +13039,7 @@ header.header_404 {
 }
 #intro .top .logo {
   font-family: Bellefair;
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 45px;
   text-transform: uppercase;
 }
@@ -13083,7 +13083,7 @@ header.header_404 {
   right: 0;
   z-index: 10002;
   display: flex;
-  background-color: #ef5e5e;
+  background-color: #fffff;
 }
 @media (max-width: 575.98px) {
   #intro .bottom .blurbs .blurb:first-child:after {
@@ -13497,7 +13497,7 @@ section.home_section_2 .section__header .countdown {
   text-align: center;
 }
 section.home_section_2 .section__header .countdown span {
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 40px;
   font-family: Bellefair;
   text-transform: uppercase;
@@ -13556,7 +13556,7 @@ section.home_section_2 .events_list ul.events li.event .left {
   }
 }
 section.home_section_2 .events_list ul.events li.event .left .date span {
-  color: #ef5e5e;
+  color: #fffff;
   text-transform: uppercase;
   font-size: 22px;
   font-family: Bellefair;
@@ -13708,7 +13708,7 @@ section.home_section_2 .form .wpcf7 .submit a {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 26px;
   text-transform: uppercase;
   font-family: Bellefair;
@@ -13723,7 +13723,7 @@ section.home_section_2 .form .wpcf7 .submit a {
 .form .wpcf7 section.home_section_2 .submit a:hover span.icon,
 section.home_section_2 .buttons a:hover span.icon,
 section.home_section_2 .form .wpcf7 .submit a:hover span.icon {
-  background-color: #ef5e5e;
+  background-color: #fffff;
   color: #fff;
 }
 .form .wpcf7 section.home_section_2 .submit a span.icon,
@@ -13736,7 +13736,7 @@ section.home_section_2 .form .wpcf7 .submit a span.icon {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
   border-radius: 50px;
   font-size: 14px;
 }
@@ -13767,7 +13767,7 @@ section.home_section_3 .section__header:before {
   top: 50%;
   left: -550px;
   transform: translate(-50%, -50%);
-  background-color: #ef5e5e;
+  background-color: #fffff;
 }
 section.home_section_3 .section__header .title {
   width: 50%;
@@ -13783,7 +13783,7 @@ section.home_section_3 .section__header .title {
     padding-bottom: 20px;
     padding-right: 0;
     border-right: 0;
-    border-bottom: 1px solid #ef5e5e;
+    border-bottom: 1px solid #fffff;
     text-align: center;
   }
 }
@@ -14025,7 +14025,7 @@ section.home_section_3 .zones__container .zone__content .left {
 section.home_section_3 .zones__container .zone__content .left span {
   font-family: Bellefair;
   text-transform: uppercase;
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 14px;
 }
 section.home_section_3 .zones__container .zone__content .left .h4,
@@ -14061,7 +14061,7 @@ section.home_section_3 .form .wpcf7 .submit a {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 26px;
   text-transform: uppercase;
   font-family: Bellefair;
@@ -14069,7 +14069,7 @@ section.home_section_3 .form .wpcf7 .submit a {
 .form .wpcf7 section.home_section_3 .submit a:hover span.icon,
 section.home_section_3 .buttons a:hover span.icon,
 section.home_section_3 .form .wpcf7 .submit a:hover span.icon {
-  background-color: #ef5e5e;
+  background-color: #fffff;
   color: #fff;
 }
 .form .wpcf7 section.home_section_3 .submit a span.icon,
@@ -14082,7 +14082,7 @@ section.home_section_3 .form .wpcf7 .submit a span.icon {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
   border-radius: 50px;
   font-size: 14px;
 }
@@ -14101,7 +14101,7 @@ section.home_section_4 .section__header {
     max-width: calc(100% - 50px);
     padding: 50px 30px;
     background-color: #1c1c1c;
-    border: 1px solid #ef5e5e;
+    border: 1px solid #fffff;
   }
 }
 section.home_section_4 .section__header .title .h2,
@@ -14122,7 +14122,7 @@ section.home_section_4 .section__header .form .wpcf7 .submit a {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 26px;
   text-transform: uppercase;
   font-family: Bellefair;
@@ -14137,7 +14137,7 @@ section.home_section_4 .section__header .form .wpcf7 .submit a {
 .form .wpcf7 section.home_section_4 .section__header .submit a:hover span.icon,
 section.home_section_4 .section__header .buttons a:hover span.icon,
 section.home_section_4 .section__header .form .wpcf7 .submit a:hover span.icon {
-  background-color: #ef5e5e;
+  background-color: #fffff;
   color: #fff;
 }
 .form .wpcf7 section.home_section_4 .section__header .submit a span.icon,
@@ -14150,7 +14150,7 @@ section.home_section_4 .section__header .form .wpcf7 .submit a span.icon {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
   border-radius: 50px;
   font-size: 14px;
 }
@@ -14478,7 +14478,7 @@ section.zones_section_1 .section__header:before {
   top: 50%;
   left: -550px;
   transform: translate(-50%, -50%);
-  background-color: #ef5e5e;
+  background-color: #fffff;
 }
 section.zones_section_1 .section__header .title {
   width: 50%;
@@ -14492,7 +14492,7 @@ section.zones_section_1 .section__header .title {
     width: 100%;
     padding-right: 0;
     border-right: 0;
-    border-bottom: 1px solid #ef5e5e;
+    border-bottom: 1px solid #fffff;
     text-align: center;
   }
 }
@@ -14534,7 +14534,7 @@ section.zones_section_1 .blurbs {
 section.zones_section_1 .blurbs .blurb {
   width: 980px;
   position: relative;
-  border-bottom: 1px solid #ef5e5e;
+  border-bottom: 1px solid #fffff;
 }
 @media screen and (max-width: 1280px) {
   section.zones_section_1 .blurbs .blurb {
@@ -14598,7 +14598,7 @@ section.zones_section_1 .blurbs .blurb .zone__header a.link3D {
   bottom: 0;
   right: 25%;
   z-index: 20;
-  background-color: #ef5e5e;
+  background-color: #fffff;
   color: #fff;
   font-family: Bellefair;
   font-size: 22px;
@@ -14740,7 +14740,7 @@ section.zones_section_1 .blurbs .blurb .zone__body .left .avatar img {
 section.zones_section_1 .blurbs .blurb .zone__body .left .infos .function span {
   text-transform: uppercase;
   font-size: 14px;
-  color: #ef5e5e;
+  color: #fffff;
   font-family: Bellefair;
 }
 section.zones_section_1 .blurbs .blurb .zone__body .left .infos .name span {
@@ -14770,10 +14770,10 @@ section.zones_section_1
   .whatsapp
   a.btn.btn-outline-primary {
   padding: 4px 8px;
-  border-color: #ef5e5e;
+  border-color: #fffff;
   background-color: transparent;
   border-radius: 50px;
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 14px;
   font-family: Bellefair;
   text-transform: uppercase;
@@ -14787,7 +14787,7 @@ section.zones_section_1
   .infos
   .whatsapp
   a.btn.btn-outline-primary:hover {
-  background-color: #ef5e5e;
+  background-color: #fffff;
   color: #fff;
 }
 section.zones_section_1
@@ -14842,9 +14842,9 @@ section.zones_section_1
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
   border-radius: 24px;
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 12px;
 }
 section.zones_section_1
@@ -14866,7 +14866,7 @@ section.zones_section_1
   .slick__buttons
   span.slick__button:hover {
   cursor: pointer;
-  background-color: #ef5e5e;
+  background-color: #fffff;
   color: #fff;
 }
 section.zones_section_1 .blurbs .blurb .zone__body .right {
@@ -14905,7 +14905,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn {
   background-color: transparent;
   border-radius: 0;
   border: none;
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 26px;
   text-transform: uppercase;
   font-family: Bellefair;
@@ -14932,7 +14932,7 @@ section.zones_section_1 .buttons button.btn:hover span.icon,
 section.zones_section_1 .form .wpcf7 .submit a:hover span.icon,
 section.zones_section_1 .form .wpcf7 .submit button.btn:hover span.icon,
 section.zones_section_1 .form .wpcf7 .submit input.btn:hover span.icon {
-  background-color: #ef5e5e;
+  background-color: #fffff;
   color: #fff;
 }
 .form .wpcf7 .submit section.zones_section_1 .buttons input.btn span.icon,
@@ -14951,7 +14951,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn span.icon {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
   border-radius: 50px;
   font-size: 14px;
 }
@@ -14986,7 +14986,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn span.icon {
   justify-content: center;
   opacity: 1;
   background: 0 0;
-  background-color: #ef5e5e;
+  background-color: #fffff;
   border-radius: 60px;
   font-size: 25px;
   color: #fff;
@@ -14995,7 +14995,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn span.icon {
   margin-bottom: 40px;
   padding: 80px;
   overflow: hidden;
-  border-bottom: 1px solid #ef5e5e;
+  border-bottom: 1px solid #fffff;
 }
 @media (max-width: 575.98px) {
   .modal#reservationModal .modal-dialog .modal-content .modal-body {
@@ -15061,7 +15061,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn span.icon {
   .section__header
   .title
   h4 {
-  color: #ef5e5e;
+  color: #fffff;
   font-size: 25px;
   font-family: Bellefair;
   font-weight: 400;
@@ -15140,7 +15140,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn span.icon {
   justify-content: center;
   align-items: center;
   border-radius: 150px;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
 }
 .modal#reservationModal
   .modal-dialog
@@ -15172,7 +15172,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn span.icon {
   .zone__header:hover
   .zone__title
   h2 {
-  color: #ef5e5e;
+  color: #fffff;
 }
 .modal#reservationModal
   .modal-dialog
@@ -15231,7 +15231,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn span.icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ef5e5e;
+  background-color: #fffff;
   border-radius: 36px;
   color: #1c1c1c;
   font-size: 20px;
@@ -15309,7 +15309,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn span.icon {
   justify-content: center;
   align-items: center;
   border-radius: 150px;
-  border: 1px solid #ef5e5e;
+  border: 1px solid #fffff;
 }
 .modal#reservationModal
   .modal-dialog
@@ -15352,7 +15352,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn span.icon {
   .zone__header:hover
   .zone__title
   h2 {
-  color: #ef5e5e;
+  color: #fffff;
 }
 .modal#reservationModal
   .modal-dialog
@@ -15450,7 +15450,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn span.icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ef5e5e;
+  background-color: #fffff;
   border-radius: 36px;
   color: #1c1c1c;
   font-size: 20px;
@@ -15508,7 +15508,7 @@ section.zones_section_1 .form .wpcf7 .submit input.btn span.icon {
   .section__header
   .title:first-child {
   padding-bottom: 15px;
-  border-bottom: 1px solid #ef5e5e;
+  border-bottom: 1px solid #fffff;
 }
 header.ambiances,
 header.ambiances .cover {
@@ -15646,7 +15646,7 @@ section.ambiances_section_2 ul.list li:hover {
   cursor: pointer;
 }
 section.ambiances_section_2 ul.list li.active {
-  color: #ef5e5e;
+  color: #fffff;
 }
 section.ambiances_section_2 ul.list li.active:before {
   content: "";
@@ -15657,7 +15657,7 @@ section.ambiances_section_2 ul.list li.active:before {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 8px;
-  background-color: #ef5e5e;
+  background-color: #fffff;
 }
 section.ambiances_section_2 .videos {
   display: none;
