@@ -108,7 +108,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  color: #d3aa7a;
+  color: #ef5e5e;
   gap: 1rem;
 }
 .blurb .icon img {
@@ -128,7 +128,7 @@
   font-weight: 400;
   line-height: 1.59375rem;
   border-radius: 0.9375rem;
-  border: 4px solid #cda072;
+  border: 4px solid #ef5e5e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,7 +141,7 @@
 section.sidebar .c__container__full {
   padding-top: 100px;
   border-top: none !important;
-  border-bottom: 1px solid rgb(211, 170, 122) !important;
+  border-bottom: 1px solid #ef5e5e !important;
 }
 
 /* slider */
@@ -319,7 +319,7 @@ img:nth-child(4) {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  color: #d3aa7a;
+  color: #ef5e5e;
   font-size: 26px;
   text-transform: uppercase;
   font-family: Bellefair;
@@ -337,7 +337,7 @@ img:nth-child(4) {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  border: 1px solid #d3aa7a;
+  border: 1px solid #ef5e5e;
   border-radius: 50px;
   font-size: 14px;
 }
@@ -427,3 +427,177 @@ section.home_section_3 .zones__container .overlay {
 #hu-revoke {
   display: none !important;
 } /* hide cookies btn */
+
+.colored-list {
+  list-style-type: none !important;
+}
+
+.cursor-dot-outline {
+  background-color: #ef5e5ec0 !important;
+}
+
+.btn-shine {
+  display: flex;
+  /* transform: skew(-12deg) rotate(-12deg); */
+  grid-area: text;
+  font-family: "Sarpanch", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px;
+  color: #1d9099;
+  text-shadow: 1px 3px 0 #e79c10, -2px -2px 0 #d53a33;
+}
+/* .btn-shine{
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+} */
+
+.kyrrr {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: .85rem;
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes bounceAnimation {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.btn-shine span {
+  display: inline-block;
+  transform-origin: bottom;
+  animation: bounceAnimation 2s infinite;
+  animation-delay: calc(var(--delay) * 0.1s);
+}
+
+.btn-shine span:nth-child(1) {
+  --delay: 1;
+}
+.btn-shine span:nth-child(2) {
+  --delay: 2;
+}
+.btn-shine span:nth-child(3) {
+  --delay: 3;
+}
+.btn-shine span:nth-child(4) {
+  --delay: 4;
+}
+.btn-shine span:nth-child(5) {
+  --delay: 5;
+}
+.btn-shine span:nth-child(6) {
+  --delay: 6;
+}
+.btn-shine span:nth-child(7) {
+  --delay: 7;
+}
+.btn-shine span:nth-child(8) {
+  --delay: 8;
+}
+.btn-shine span:nth-child(9) {
+  --delay: 9;
+}
+.btn-shine span:nth-child(10) {
+  --delay: 10;
+}
+.btn-shine span:nth-child(11) {
+  --delay: 11;
+}

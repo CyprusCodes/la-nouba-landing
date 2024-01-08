@@ -37,6 +37,7 @@
   <link rel="icon" href="assets/Logo-black.png" sizes="32x32" />
   <link rel="icon" href="assets/Logo-black.png" sizes="192x192" />
   <link rel="apple-touch-icon" href="assets/Logo-black.png" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <style>
     nav.navbar {
       z-index: 1 !important;
@@ -122,17 +123,17 @@
       <ul id="main-menu" class="navbar-nav">
         <li id="menu-item-190"
           class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-190"><a
-            href="index.html#events" aria-current="page">Etkinlikler</a></li>
+            href="index.html#events" aria-current="page" data-translate="etkinlikler">Etkinlikler</a></li>
         <li id="menu-item-290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a
-            href="gallery.html">Galeri</a></li>
+            href="gallery.html" data-translate="galeri">Galeri</a></li>
       </ul>
     </div>
     <div id="navbarNavDropdown" class="menu-main-right-container">
       <ul id="main-menu" class="navbar-nav">
         <li id="menu-item-289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a
-            rel="noopener" href="about.html">Hakkımızda</a></li>
+            rel="noopener" href="about.html" data-translate="hakkımızda">Hakkımızda</a></li>
         <li id="menu-item-192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
-            href="./contact.html">İletişim</a></li>
+            href="./contact.html" data-translate="iletişim">İletişim</a></li>
       </ul>
     </div>
   </div>
@@ -155,15 +156,15 @@
         <div id="navbarNavDropdown" class="menu-main-left-container">
           <ul id="main-menu" class="navbar-nav">
             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-190"><a
-                href="index.html#events" aria-current="page">Etkinlikler</a></li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a
-                href="gallery.html">Galeri</a>
+                href="index.html#events" aria-current="page" data-translate="etkinlikler">Etkinlikler</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290"><a href="gallery.html"
+                data-translate="galeri">Galeri</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="center">
-        <div class="logo"><a href="index.html"><img alt="" class="lazy lazyload"
+        <div class="logo"><a href="./index.html"><img alt="" class="lazy lazyload"
               src="./wp-content//uploads/2022/09/Logo.png"><noscript><img class="lazy"
                 src="./wp-content//uploads/2022/09/Logo.png" alt=""></noscript></a></div>
       </div>
@@ -171,9 +172,9 @@
         <div id="navbarNavDropdown" class="menu-main-right-container">
           <ul id="main-menu" class="navbar-nav">
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"><a rel="noopener"
-              href="about.html">Hakkımızda</a></li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a
-                href="./contact.html">İletişim</a></li>
+              href="about.html" data-translate="hakkımızda">Hakkımızda</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"><a href="./contact.html"
+                data-translate="iletişim">İletişim</a></li>
           </ul>
         </div>
         <div id="btn-menu">
@@ -181,7 +182,27 @@
             <span></span>
           </div>
         </div>
+        <div class="dropdown  droplang language_button">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" aria-haspopup="true"
+            aria-expanded="false" onclick="toggleDropdownMenu()">
+            TR
+          </button>
+          <div class="dropdown-menu dropdown-container" aria-labelledby="dropdownMenuButton" id="lang">
+            <a class="dropdown-item dropdown-text" href="?lang=tr">TR</a>
+            <a class="dropdown-item dropdown-text" href="?lang=en">EN</a>
+            <a class="dropdown-item dropdown-text" href="?lang=ua">UA</a>
+            <a class="dropdown-item dropdown-text" href="?lang=ru">RU</a>
+          </div>
+        </div>
+
+        <script>
+          function toggleDropdownMenu() {
+            var dropdownMenu = document.getElementById("lang");
+            dropdownMenu.classList.toggle("show");
+          }
+        </script>
       </div>
+
     </nav>
 
     <div id="transition"></div>
@@ -198,7 +219,7 @@
     </section>
     <section id="home_section_4" class="home_section_4 mainContainer">
       <div class="title">
-        <h2 style=" margin-top: 5.5rem;  color: #fff; font-size: 60px; text-align: center; margin-bottom: 30px;">SUMMER
+        <h2 style=" margin-top: 5.5rem;  color: #ef5e5e; font-size: 60px; text-align: center; margin-bottom: 30px;">SUMMER
           2023</h2>
       </div>
       
@@ -281,7 +302,7 @@
       </div>
      
       <!-- <div class="title" style="display: flex; justify-content: center;">
-        <a style="color: aliceblue; background-color: #d3aa7a; border-radius: .25rem; padding: 1.15rem; font-size: 1.25rem; font-weight: 500;" href="https://www.facebook.com/lanoubakyrenia/photos">More on Youtube</a>
+        <a style="color: aliceblue; background-color: #ef5e5e; border-radius: .25rem; padding: 1.15rem; font-size: 1.25rem; font-weight: 500;" href="https://www.facebook.com/lanoubakyrenia/photos">More on Youtube</a>
       </div> -->
     </section>
 
@@ -301,7 +322,7 @@
             <div class="blurb">
               <div class="blurb_content">
                 <div class="icon">
-                  <img src="./assets/location-sign-svgrepo-com.svg" alt="">
+                  <i style="font-size: 2.25rem;" class="ri-map-pin-2-fill"></i>
                 </div>
                 <div class="container">
                   <h3>Şht. Hasan Cafer Sokak Merit Park Hotel Yanı, GİRNE</h3>
@@ -311,7 +332,7 @@
             <div class="blurb">
               <div class="blurb_content">
                 <div class="icon">
-                  <img src="./assets/phone-call-bold-svgrepo-com.svg" alt="">
+                  <i style="font-size: 2.25rem;" class="ri-phone-fill"></i>
                 </div>
                 <div class="container">
                   <h3>+90 539 105 15 15 </br> +90 539 105 17 17</h3>
@@ -321,9 +342,9 @@
             <div class="blurb">
               <div class="blurb_content">
                 <div class="icon">
-                  <img src="./assets/email-svgrepo-com.svg" alt="">
+                  <i style="font-size: 2.25rem;" class="ri-mail-send-line"></i>
                 </div>
-                <div class="container">
+                <div class="container" >
                   <h3>info@lanouba.com</h3>
                 </div>
               </div>
@@ -402,6 +423,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
     integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/galleries_translation.js"></script>
 </body>
 
 </html>

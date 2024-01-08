@@ -69,7 +69,7 @@ $.i18n.tr = {
   bilgi_p_2: "Kıbrıs gece hayatının keyfini çıkarmak isteyenler için La Nouba, çarşamba, cuma, cumartesi günleri popüler sanatçılar ve dünyaca ünlü DJ’ler ile Girne’de müziğin ve eğlencenin tek adresi olarak hizmet veriyor.",
   bilgi_p_3: "La Nouba’da Girne eğlence hayatının keyfini çıkarmak, dans ve eğlence dolu unutulmaz bir gece geçirmek için hemen rezervasyon yaptırabilirsiniz.",
   bilgi_p_4: "Loca Sayısı: 11 *10 Adet Normal Loca *1 Adet Ultra Lüks Loca *Localara özel Sushi servisi de verilmektedir. VIP Masa Sayısı: 20 Her masa 6 kişiliktir ve oturma imkanı da sunulmaktadır. VIP masalara Sushi servisi de verilmektedir. Bistro Sayısı:120 Uzun masalar 10, kare masalar ise 6 kişi kapasitelidir.",
-  bilgi_ol: "<ol data-translate='bilgi_ol' class='' style='color: aliceblue;'><li class='act_blurb'>Toplam Kapasite: 1000 Kişi</li><li class='act_blurb'>VIP Masa Sayısı: 20</li><li class='act_blurb'>Bistro Sayısı:120</li><li class='act_blurb'>Toplam Kapasite: 1000 Kişi</li><li class='act_blurb'>1 Adet Ultra Lüks Loca</li></ol>",
+  bilgi_ol: "<li class='act_blurb'>Toplam Kapasite: 1000 Kişi</li><li class='act_blurb'>VIP Masa Sayısı: 20</li><li class='act_blurb'>Bistro Sayısı:120</li><li class='act_blurb'>Toplam Kapasite: 1000 Kişi</li><li class='act_blurb'>1 Adet Ultra Lüks Loca</li>",
   bilgi_t: "sosyal medya",
     t_footer:
     "La Nouba &copy; 2023 - tüm hakları saklıdır - <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a> tarafından oluşturulmuştur.",
@@ -113,7 +113,7 @@ $.i18n.en = {
     bilgi_p_2: "For those who want to enjoy the nightlife of Cyprus, La Nouba serves as the ultimate destination for music and entertainment in Kyrenia on Wednesdays, Fridays, and Saturdays with popular artists and world-famous DJs.",
     bilgi_p_3: "You can make a reservation now to enjoy the nightlife of Kyrenia at La Nouba, have an unforgettable night filled with dance and entertainment.",
     bilgi_p_4: "Number of Private Boxes: 11 * 10 Normal Private Boxes * 1 Ultra Luxury Private Box * Sushi service is also available for the private boxes. Number of VIP Tables: 20 Each table accommodates 6 people and seating is provided. VIP tables also receive Sushi service. Number of Bistro Tables: 120 Long tables seat 10, while square tables seat 6 people.",
-    bilgi_ol: "<ol data-translate='bilgi_ol' class='' style='color: aliceblue;'><li class='act_blurb'>Total Capacity: 1000 People</li><li class='act_blurb'>Number of VIP Tables: 20</li><li class='act_blurb'>Number of Bistro Tables: 120</li><li class='act_blurb'>Total Capacity: 1000 People</li><li class='act_blurb'>1 Ultra Luxury Private Box</li></ol>",
+    bilgi_ol: "<li class='act_blurb'>Total Capacity: 1000 People</li><li class='act_blurb'>Number of VIP Tables: 20</li><li class='act_blurb'>Number of Bistro Tables: 120</li><li class='act_blurb'>Total Capacity: 1000 People</li><li class='act_blurb'>1 Ultra Luxury Private Box</li>",
     bilgi_t: "social media",
   t_footer:
     "La Nouba © 2023 - All rights reserved - by <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a>",
@@ -157,7 +157,7 @@ $.i18n.ru = {
     bilgi_p_2: "Для тех, кто хочет насладиться ночной жизнью Кипра, La Nouba служит в качестве конечной точки назначения для музыки и развлечений в Кирении по средам, пятницам и субботам с популярными артистами и всемирно известными ди-джеями.",
     bilgi_p_3: "Вы можете сделать бронирование прямо сейчас, чтобы насладиться ночной жизнью Кирении в La Nouba, провести незабываемую ночь, полную танцев и развлечений.",
     bilgi_p_4: "Количество частных боксов: 11 * 10 обычных частных боксов * 1 ультра-роскошный частный бокс * Также предоставляется услуга доставки суши для частных боксов. Количество VIP-столов: 20 Каждый стол вмещает 6 человек, предоставляется место для сидения. VIP-столы также получают услугу доставки суши. Количество бистро-столов: 120 Длинные столы вмещают 10 человек, квадратные столы вмещают 6 человек.",
-    bilgi_ol: "<ol data-translate='bilgi_ol' class='' style='color: aliceblue;'><li class='act_blurb'>Общая вместимость: 1000 человек</li><li class='act_blurb'>Количество VIP-столов: 20</li><li class='act_blurb'>Количество бистро-столов: 120</li><li class='act_blurb'>Общая вместимость: 1000 человек</li><li class='act_blurb'>1 ультра-роскошный частный бокс</li></ol>",
+    bilgi_ol: "<li class='act_blurb'>Общая вместимость: 1000 человек</li><li class='act_blurb'>Количество VIP-столов: 20</li><li class='act_blurb'>Количество бистро-столов: 120</li><li class='act_blurb'>Общая вместимость: 1000 человек</li><li class='act_blurb'>1 ультра-роскошный частный бокс</li>",
     bilgi_t: "социальные медиа",
   t_footer:
     "La Nouba © 2023 - все права защищены - <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a>",
@@ -201,7 +201,7 @@ bilgi_p_1: "La Nouba, одне з найособливіших місць ніч
 bilgi_p_2: "Для тих, хто хоче насолодитися нічним життям Кіпру, La Nouba служить остаточною точкою призначення для музики та розваг у Киренії по середах, п'ятницях та суботах з популярними артистами та всесвітньо відомими діджеями.",
 bilgi_p_3: "Ви можете зробити бронювання прямо зараз, щоб насолодитися нічним життям Кіренії в La Nouba, провести незабутню ніч, повну танців та розваг.",
 bilgi_p_4: "Кількість приватних боксів: 11 * 10 звичайних приватних боксів * 1 ультра-роскошний приватний бокс * Також надається послуга доставки суші для приватних боксів. Кількість VIP-столів: 20 Кожен стіл розрахований на 6 осіб та надається сидіння. VIP-столи також отримують послугу доставки суші. Кількість бістро-столів: 120 Довгі столи розраховані на 10 осіб, квадратні столи розраховані на 6 осіб.",
-bilgi_ol: "<ol data-translate='bilgi_ol' class='' style='color: aliceblue;'><li class='act_blurb'>Загальна вмістимість: 1000 осіб</li><li class='act_blurb'>Кількість VIP-столів: 20</li><li class='act_blurb'>Кількість бістро-столів: 120</li><li class='act_blurb'>Загальна вмістимість: 1000 осіб</li><li class='act_blurb'>1 ультра-роскошний приватний бокс</li></ol>",
+bilgi_ol: "<li class='act_blurb'>Загальна вмістимість: 1000 осіб</li><li class='act_blurb'>Кількість VIP-столів: 20</li><li class='act_blurb'>Кількість бістро-столів: 120</li><li class='act_blurb'>Загальна вмістимість: 1000 осіб</li><li class='act_blurb'>1 ультра-роскошний приватний бокс</li>",
 bilgi_t: "соціальні медіа",
   t_footer:
     "La Nouba © 2023 - Усі права захищено - від <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a>",

@@ -470,10 +470,10 @@ figure.wp-block-image img.lazyloading {
   gap: 10px;
   align-items: center;
   justify-content: start;
-  color: #d3aa7a;
+  color: #ef5e5e;
 }
 .socials_m a {
-  color: #d3aa7a;
+  color: #ef5e5e;
   font-size: 24px;
 }
 .socials_m a :hover {
@@ -488,7 +488,7 @@ figure.wp-block-image img.lazyloading {
 
 .colored-list li::before {
   content: "• ";
-  color: #d3aa7a;
+  color: #ef5e5e;
   font-size: 35px;
 }
 
