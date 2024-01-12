@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p, a {
+  margin-bottom: 0;
+  font-family: 'Roboto', sans-serif !important;
+}
+.booking-form .form-label {
+  color: #fff !important;
+}
 .language_button {
   color: #fff !important;
   width: 10%;
@@ -5,6 +16,46 @@
   /* left: -160%; */
 }
 
+@media (min-width: 320px) {
+  .language_button #dropdownMenuButton {
+    color: #fff !important;
+    width: 10%;
+    position: relative;
+    left: -300% !important;
+  }
+}
+@media (min-width: 375px) {
+  .language_button #dropdownMenuButton {
+    color: #fff !important;
+    width: 10%;
+    position: relative;
+    left: -350% !important;
+  }
+}
+@media (min-width: 425px) {
+  .language_button #dropdownMenuButton {
+    color: #fff !important;
+    width: 10%;
+    position: relative;
+    left: -380% !important;
+  }
+}
+@media (min-width: 525px) {
+  .language_button #dropdownMenuButton {
+    color: #fff !important;
+    width: 10%;
+    position: relative;
+    left: -460% !important;
+  }
+}
+@media (min-width: 625px) {
+  .language_button #dropdownMenuButton {
+    color: #fff !important;
+    width: 10%;
+    position: relative;
+    left: -560% !important;
+  }
+}
 @media (min-width: 768px) {
   .language_button {
     color: #fff !important;

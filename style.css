@@ -519,3 +519,17 @@ section.pop_up_section {
   justify-content: center;
   flex-direction: column;
 }
+
+
+#badge-reservation {
+  /* width: 140px; */
+    height: 10px !important;
+    position: fixed !important;
+    z-index: 30 !important;
+    transition: all 0.2s ease-in-out !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  right: 80px !important;
+    top: 80px !important;
+}
