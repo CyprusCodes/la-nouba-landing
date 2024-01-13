@@ -17,7 +17,7 @@
 }
 
 @media (min-width: 320px) {
-  .language_button #dropdownMenuButton {
+  .language_button {
     color: #fff !important;
     width: 10%;
     position: relative;
@@ -25,7 +25,7 @@
   }
 }
 @media (min-width: 375px) {
-  .language_button #dropdownMenuButton {
+  .language_button {
     color: #fff !important;
     width: 10%;
     position: relative;
@@ -33,7 +33,7 @@
   }
 }
 @media (min-width: 425px) {
-  .language_button #dropdownMenuButton {
+  .language_button {
     color: #fff !important;
     width: 10%;
     position: relative;
@@ -41,7 +41,7 @@
   }
 }
 @media (min-width: 525px) {
-  .language_button #dropdownMenuButton {
+  .language_button {
     color: #fff !important;
     width: 10%;
     position: relative;
@@ -49,30 +49,37 @@
   }
 }
 @media (min-width: 625px) {
-  .language_button #dropdownMenuButton {
+  .language_button {
     color: #fff !important;
     width: 10%;
     position: relative;
     left: -560% !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .language_button {
     color: #fff !important;
     width: 10%;
     position: fixed;
-    /* left: -120%; */
+    left: -120% !important;
+  }
+  #badge-reservation a div{
+    margin-top: 8rem !important;
   }
 }
-@media (min-width: 858px) {
+@media (min-width: 840px) {
   .language_button {
     color: #fff !important;
     width: 10%;
     position: fixed;
-    /* left: -100%; */
+    left: -1% !important;
   }
 }
-
+@media (max-width: 767px) {
+  #badge-reservation img{
+    display: none !important;
+  }
+}
 /* Custom styles for the dropdown button */
 .dropdown.droplang.language_button .btn {
   background-color: transparent;
