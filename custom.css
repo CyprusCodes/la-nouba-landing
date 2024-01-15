@@ -63,9 +63,9 @@
     position: fixed;
     left: -120% !important;
   }
-  #badge-reservation a div{
+  /* #badge-reservation a div{
     margin-top: 8rem !important;
-  }
+  } */
 }
 @media (min-width: 840px) {
   .language_button {
@@ -75,11 +75,11 @@
     left: -1% !important;
   }
 }
-@media (max-width: 767px) {
-  #badge-reservation img{
+/* @media (max-width: 767px) {
+  #badge-reservation a div img{
     display: none !important;
   }
-}
+} */
 /* Custom styles for the dropdown button */
 .dropdown.droplang.language_button .btn {
   background-color: transparent;
@@ -658,4 +658,25 @@ section.home_section_3 .zones__container .overlay {
 }
 .btn-shine span:nth-child(11) {
   --delay: 11;
+}
+section.home_section_3 .section__header:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: -550px;
+  transform: translate(-50%, -50%);
+  background-color: #d3aa7a;
+}
+section.contact .section__header .title:after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  margin-left: 50px;
+  position: absolute;
+  top: 50%;
+  right: -200px;
+  transform: translateY(-50%);
+  background-color: #d3aa7a;
 }
