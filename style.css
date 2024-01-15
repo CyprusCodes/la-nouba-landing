@@ -523,7 +523,7 @@ section.pop_up_section {
 
 #badge-reservation {
   /* width: 140px; */
-    height: 10px !important;
+    /* height: 10px !important; */
     position: fixed !important;
     z-index: 30 !important;
     transition: all 0.2s ease-in-out !important;

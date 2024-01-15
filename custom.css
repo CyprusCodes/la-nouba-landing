@@ -680,3 +680,9 @@ section.contact .section__header .title:after {
   transform: translateY(-50%);
   background-color: #d3aa7a;
 }
+
+@media screen and (max-width: 1280px){
+  section.sidebar .blurbs .blurb .logo {
+    display: flex;
+}
+}
