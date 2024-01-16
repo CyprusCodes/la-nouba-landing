@@ -75,11 +75,11 @@
     left: -1% !important;
   }
 }
-/* @media (max-width: 767px) {
-  #badge-reservation a div img{
+@media (max-width: 767px) {
+  #badge-reservation a div #rezerve{
     display: none !important;
   }
-} */
+}
 /* Custom styles for the dropdown button */
 .dropdown.droplang.language_button .btn {
   background-color: transparent;
@@ -684,5 +684,21 @@ section.contact .section__header .title:after {
 @media screen and (max-width: 1280px){
   section.sidebar .blurbs .blurb .logo {
     display: flex;
+}
+}
+
+
+.mkdsjk{
+  right: -127px;
+  position: relative;
+}
+#badge-reservation-mobile .text span{
+  color: #d3aa7a;
+}
+
+@media screen and (min-width: 789px) {
+.blurbs .logo img {
+    height: 5rem !important;
+    width: 13rem !important;
 }
 }
