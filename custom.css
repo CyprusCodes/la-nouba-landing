@@ -1,10 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p, a {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
   margin-bottom: 0;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 .booking-form .form-label {
   color: #fff !important;
@@ -76,7 +87,7 @@
   }
 }
 @media (max-width: 767px) {
-  #badge-reservation a div #rezerve{
+  #badge-reservation a div #rezerve {
     display: none !important;
   }
 }
@@ -594,8 +605,8 @@ section.home_section_3 .zones__container .overlay {
 } */
 
 .kyrrr {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: .85rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.85rem;
   width: 100%;
   font-weight: 700;
   display: flex;
@@ -681,26 +692,29 @@ section.contact .section__header .title:after {
   background-color: #d3aa7a;
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1280px) {
   section.sidebar .blurbs .blurb .logo {
     display: flex;
-}
+  }
 }
 
-
-.mkdsjk{
-  right: -127px;
+.mkdsjk {
+  right: -86px;
   position: relative;
+  width: 6rem;
+  border: 2px solid #d3aa7a;
+  border-radius: 3rem 0rem 0rem 3rem;
+  padding: 0.5rem 1.25rem;
 }
-#badge-reservation-mobile .text span{
+#badge-reservation-mobile .text span {
   color: #d3aa7a;
 }
 
 @media screen and (min-width: 789px) {
-.blurbs .logo img {
+  .blurbs .logo img {
     height: 5rem !important;
     width: 13rem !important;
-}
+  }
 }
 
 #badge-reservation-mobile {
