@@ -480,6 +480,9 @@ section.home_section_4
   .buttons a {
     margin-top: 10px !important;
   }
+  .mkdsjk {
+    border: none !important;
+  }
 }
 @media (max-width: 375px) {
   .pic-ctn > img {
@@ -715,8 +718,30 @@ section.contact .section__header .title:after {
     height: 5rem !important;
     width: 13rem !important;
   }
+  /* #whtsp {
+    z-index: 99;
+    display: flex;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+  } */
 }
 
 #badge-reservation-mobile {
   width: 20% !important;
+}
+
+#whtsp {
+  z-index: 99;
+  display: flex;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
+#whtsp img {
+  display: flex;
+  width: 3rem;
+}
+.dropdown-menu.show {
+  display: block;
 }

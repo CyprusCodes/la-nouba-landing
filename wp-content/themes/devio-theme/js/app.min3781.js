@@ -232,7 +232,7 @@ jQuery(function () {
     0 < $("#reservationModal").length &&
       ("undefined" == typeof eventCountdown2
         ? $("#reservationModal .step_1").html(
-            '<div class="section__header"><div class="title"><h4>Aucun événement</br>disponible</h4></div></div>'
+            '<div class="section__header"><div class="title"><h4>Aucun événement<br>disponible</h4></div></div>'
           )
         : ($("#reservationModal .form form.wpcf7-form").each(function () {
             var o = $(this),
