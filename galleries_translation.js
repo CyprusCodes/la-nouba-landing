@@ -32,15 +32,16 @@ $.i18n = function (options) {
 };
 
 $.i18n.tr = {
+  news_link: "HABERLER",
   etkinlikler: "Etkinlikler",
   galeri: "Galeri",
   hakkımızda: "Hakkımızda",
   iletişim: "İletişim",
   your_browser: "Tarayıcınız video etiketini desteklemiyor.",
-  summer_2023: "", 
-  summer_2022: "", 
+  summer_2023: "",
+  summer_2022: "",
   check_more: "",
-  fotoğraflar:"Fotoğraflar",
+  fotoğraflar: "Fotoğraflar",
   galeriyegozat:
     "Galeriye gözat<span class='icon'><i class='fal fa-chevron-right'></i></span>",
   videolar: "Videolar",
@@ -50,6 +51,7 @@ $.i18n.tr = {
 };
 
 $.i18n.en = {
+  news_link: "NEWS",
   etkinlikler: "Events",
   galeri: "Gallery",
   hakkımızda: "About us",
@@ -68,6 +70,7 @@ $.i18n.en = {
 };
 
 $.i18n.ru = {
+  news_link: "НОВОСТИ",
   etkinlikler: "Мероприятия",
   galeri: "Галерея",
   hakkımızda: "О нас",
@@ -86,6 +89,7 @@ $.i18n.ru = {
 };
 
 $.i18n.ua = {
+  news_link: "НОВИНИ",
   etkinlikler: "Події",
   galeri: "Галерея",
   hakkımızda: "Про нас",

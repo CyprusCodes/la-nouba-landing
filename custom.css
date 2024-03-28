@@ -745,3 +745,17 @@ section.contact .section__header .title:after {
 .dropdown-menu.show {
   display: block;
 }
+@media (max-width: 991.98px) {
+  #menu #navbarNavDropdown ul.navbar-nav li.menu-item {
+    margin-bottom: 30px !important;
+  }
+}
+.caption_gallery {
+  margin-top: 0.5rem;
+  color: white;
+  background-color: #d3aa7a;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  font-weight: 600;
+}

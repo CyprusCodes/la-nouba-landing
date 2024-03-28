@@ -79,6 +79,14 @@
           grid-template-columns: repeat(3, minmax(0, 1fr));
         }
       }
+      @media (max-width: 991.98px) {
+        #menu {
+          padding: 0px 80px 50px;
+          align-items: flex-start;
+          top: 6rem;
+        }
+      }
+
       /* .image a img{
   height: 20rem !important;
 } */
@@ -114,7 +122,15 @@
         </div>
       </a>
     </div>
-
+    <a
+      href="https://api.whatsapp.com/send?phone=+90(539)1051515&text=Merhaba !"
+      id="whtsp"
+    >
+      <img
+        src="https://static-00.iconduck.com/assets.00/whatsapp-icon-2048x2048-dumosfvo.png"
+        alt=""
+      />
+    </a>
     <div
       id="badge-reservation-mobile"
       data-bs-toggle="modal"
@@ -160,16 +176,20 @@
           >
             <a href="gallery.html" data-translate="galeri">Galeri</a>
           </li>
-        </ul>
-      </div>
-      <div id="navbarNavDropdown" class="menu-main-right-container">
-        <ul id="main-menu" class="navbar-nav">
           <li
             id="menu-item-289"
             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"
           >
             <a rel="noopener" href="about.html" data-translate="hakkımızda"
               >Hakkımızda</a
+            >
+          </li>
+          <li
+            id="menu-item-289"
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"
+          >
+            <a rel="noopener" href="news.html" data-translate="news_link"
+              >News</a
             >
           </li>
           <li
@@ -240,9 +260,50 @@
               <li
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"
               >
-                <a rel="noopener" href="about.html" data-translate="hakkımızda"
-                  >Hakkımızda</a
-                >
+                <div class="dropdown droplang language_button">
+                  <div
+                    class="btn dropdown-toggle"
+                    type="button"
+                    id=""
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    onclick="toogleAbout()"
+                    data-translate="hakkımızda"
+                    style="
+                      text-transform: uppercase;
+                      font-family: 'Roboto', sans-serif !important;
+                      font-size: 14px;
+                    "
+                  >
+                    ABOUT
+                  </div>
+                  <div
+                    style="position: fixed; top: 5rem"
+                    class="dropdown-menu dropdown-container"
+                    aria-labelledby="dropdownMenuButton"
+                    id="more-about"
+                  >
+                    <a
+                      class="dropdown-item dropdown-text"
+                      href="/about.html"
+                      data-translate="hakkımızda"
+                      >About</a
+                    >
+                    <a
+                      class="dropdown-item dropdown-text"
+                      href="/news.html"
+                      data-translate="news_link"
+                      >News</a
+                    >
+                  </div>
+                </div>
+
+                <script>
+                  function toogleAbout() {
+                    var dropdownMenu = document.getElementById("more-about");
+                    dropdownMenu.classList.toggle("show");
+                  }
+                </script>
               </li>
               <li
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"
@@ -318,6 +379,9 @@
                 class="lazy lazyload"
               />
             </a>
+            <p class="caption_gallery">
+              Carnaval De La Nouba | 26 July Wed | La Nouba
+            </p>
           </div>
           <div class="image">
             <a
@@ -331,6 +395,9 @@
                 class="lazy lazyload"
               />
             </a>
+            <p class="caption_gallery">
+              La Nouba Saturday | 09 September Saturday | La Nouba
+            </p>
           </div>
           <div class="image">
             <a
@@ -344,6 +411,9 @@
                 class="lazy lazyload"
               />
             </a>
+            <p class="caption_gallery">
+              La Nouba Saturday | 09 September Saturday | La Nouba
+            </p>
           </div>
           <div class="image">
             <a
@@ -357,6 +427,9 @@
                 class="lazy lazyload"
               />
             </a>
+            <p class="caption_gallery">
+              La Nouba Saturday | 09 September Saturday | La Nouba
+            </p>
           </div>
 
           <div class="image">
@@ -371,6 +444,9 @@
                 class="lazy lazyload"
               />
             </a>
+            <p class="caption_gallery">
+              La Nouba Saturday | 23 September Saturday | La Nouba
+            </p>
           </div>
           <div class="image">
             <a
@@ -384,6 +460,9 @@
                 class="lazy lazyload"
               />
             </a>
+            <p class="caption_gallery">
+              Tributes Kingdom | 25 August Friday | La Nouba
+            </p>
           </div>
           <div class="image">
             <a
@@ -397,6 +476,9 @@
                 class="lazy lazyload"
               />
             </a>
+            <p class="caption_gallery">
+              Oldies But Goodies | 07 July Fri | La Nouba
+            </p>
           </div>
           <div class="image">
             <a
@@ -410,6 +492,9 @@
                 class="lazy lazyload"
               />
             </a>
+            <p class="caption_gallery">
+              Burak Yeter at La Nouba | 22 September 2023 Friday | La Nouba
+            </p>
           </div>
 
           <div class="image">
@@ -420,6 +505,7 @@
             >
               <img src="./assets/2023/1.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">R&Drill | 09 August Wed | La Nouba</p>
           </div>
           <div class="image">
             <a
@@ -429,6 +515,9 @@
             >
               <img src="./assets/2023/2.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              Oldies But Goodies | 07 July Fri | La Nouba
+            </p>
           </div>
           <div class="image">
             <a
@@ -438,6 +527,9 @@
             >
               <img src="./assets/2023/3.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              Glow in The Dark | 05 July Wed | La Nouba
+            </p>
           </div>
           <div class="image">
             <a
@@ -447,6 +539,7 @@
             >
               <img src="./assets/2023/4.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">Young Stunna | 02 July Sun | La Nouba</p>
           </div>
 
           <div class="image">
@@ -457,6 +550,9 @@
             >
               <img src="./assets/2023/5.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              Fiesta De La Nouba | 27 September 2023 Wednesday | La Nouba
+            </p>
           </div>
           <div class="image">
             <a
@@ -466,6 +562,10 @@
             >
               <img src="./assets/2023/6.jpg" class="lazy lazyload" />
             </a>
+
+            <p class="caption_gallery">
+              White Night (3rd Day Of Bayram) | 30 June Fri | La Nouba
+            </p>
           </div>
           <div class="image">
             <a
@@ -475,6 +575,9 @@
             >
               <img src="./assets/2023/7.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              MOULIN ROUGE (2ND DAY OF BAYRAM) | 29 JUNE THU 2023
+            </p>
           </div>
           <div class="image">
             <a
@@ -484,6 +587,9 @@
             >
               <img src="./assets/2023/8.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              FIESTA DE LA NOUBA (1ST DAY OF BAYRAM) | 28 JUNE WED 2023
+            </p>
           </div>
 
           <div class="image">
@@ -494,6 +600,9 @@
             >
               <img src="./assets/2023/9.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              LA NOUBA SATURDAY | 24 JUNE SAATURDAY 2023
+            </p>
           </div>
           <div class="image">
             <a
@@ -503,6 +612,7 @@
             >
               <img src="./assets/2023/10.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">MAHMUT ORHAN | 23 JUNE FRIDAY 2023</p>
           </div>
           <div class="image">
             <a
@@ -512,6 +622,9 @@
             >
               <img src="./assets/2023/11.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              ALOHA HAWAIIAN NIGHT | 21 JUNE WEDNESDAY 2023 |
+            </p>
           </div>
           <div class="image">
             <a
@@ -521,6 +634,9 @@
             >
               <img src="./assets/2023/12.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              LA NOUBA SATURDAY | 17 JUNE SATURDAY 2023
+            </p>
           </div>
         </div>
 
@@ -533,6 +649,7 @@
             >
               <img src="./assets/2023/13.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">GOODBOYS | 16 JUNE FRIDAY 2023</p>
           </div>
           <div class="image">
             <a
@@ -542,6 +659,9 @@
             >
               <img src="./assets/2023/14.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              CARNAVAL DE LA NOUBA | 14 JUNE WEDNESDAY 2023 |
+            </p>
           </div>
           <div class="image">
             <a
@@ -551,6 +671,9 @@
             >
               <img src="./assets/2023/15.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              LA NOUBA SATURDAY | 10TH JUNE SATURDAY 2023
+            </p>
           </div>
           <div class="image">
             <a
@@ -560,6 +683,9 @@
             >
               <img src="./assets/2023/16.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              SEASON OPENING | 09TH JUNE FRIDAY 2023
+            </p>
           </div>
         </div>
         <div class="title" style="display: flex; justify-content: center">
@@ -601,6 +727,7 @@
             >
               <img src="./assets/2022/1.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">10TH SEPTEMBER SATURDAY</p>
           </div>
           <div class="image">
             <a
@@ -610,6 +737,7 @@
             >
               <img src="./assets/2022/2.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">09TH SEPTEMBER 2022 FRIDAY</p>
           </div>
           <div class="image">
             <a
@@ -619,6 +747,9 @@
             >
               <img src="./assets/2022/3.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              WHITE NIGHT | 14TH SEPTEMBER WEDNESDAY
+            </p>
           </div>
           <div class="image">
             <a
@@ -628,6 +759,9 @@
             >
               <img src="./assets/2022/4.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              ALOHA HAWAIIAN NIGHT | 21TH SEPTEMBER WEDNESDAY
+            </p>
           </div>
 
           <div class="image">
@@ -638,6 +772,7 @@
             >
               <img src="./assets/2022/5.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">16TH SEPTEMBER 2022 FRIDAY</p>
           </div>
           <div class="image">
             <a
@@ -647,6 +782,7 @@
             >
               <img src="./assets/2022/6.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">17TH SEPTEMBER 2022 SATURDAY</p>
           </div>
           <div class="image">
             <a
@@ -656,6 +792,7 @@
             >
               <img src="./assets/2022/7.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">24TH SEPTEMBER 2022 SATURDAY</p>
           </div>
           <div class="image">
             <a
@@ -665,6 +802,7 @@
             >
               <img src="./assets/2022/8.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">23RD SEPTEMBER 2022 FRIDAY</p>
           </div>
 
           <div class="image">
@@ -675,6 +813,9 @@
             >
               <img src="./assets/2022/9.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">
+              CARNAVAL DE LA NOUBA | 7TH SEPTEMBER 2022 WEDNESDAY
+            </p>
           </div>
           <div class="image">
             <a
@@ -684,6 +825,7 @@
             >
               <img src="./assets/2022/10.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">27TH AUGUST 2022 SATURDAY</p>
           </div>
           <div class="image">
             <a
@@ -693,6 +835,7 @@
             >
               <img src="./assets/2022/11.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">03RD SEPTEMBER 2022 SATURDAY</p>
           </div>
           <div class="image">
             <a
@@ -702,6 +845,7 @@
             >
               <img src="./assets/2022/12.jpg" class="lazy lazyload" />
             </a>
+            <p class="caption_gallery">C KAY | 31ST AUGUST 2022 WEDNESDAY</p>
           </div>
         </div>
       </section>

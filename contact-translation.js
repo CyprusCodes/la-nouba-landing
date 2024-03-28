@@ -32,6 +32,7 @@ $.i18n = function (options) {
 };
 
 $.i18n.tr = {
+  news_link: "HABERLER",
   etkinlikler: "Etkinlikler",
   galeri: "Galeri",
   hakkımızda: "Hakkımızda",
@@ -54,6 +55,7 @@ $.i18n.tr = {
 };
 
 $.i18n.en = {
+  news_link: "NEWS",
   etkinlikler: "Events",
   galeri: "Gallery",
   hakkımızda: "About Us",
@@ -76,6 +78,7 @@ $.i18n.en = {
 };
 
 $.i18n.ru = {
+  news_link: "НОВОСТИ",
   etkinlikler: "Мероприятия",
   galeri: "Галерея",
   hakkımızda: "О нас",

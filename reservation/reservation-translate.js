@@ -1,12 +1,12 @@
 let lang = document.getElementById("i_lang");
 
-              function toggledLangBtn() {
-                if (lang.className === "dropdown-menu dropdown-container") {
-                  lang.classList.add("show");
-                } else {
-                  lang.classList.remove("show");
-                }
-              }
+function toggledLangBtn() {
+  if (lang.className === "dropdown-menu dropdown-container") {
+    lang.classList.add("show");
+  } else {
+    lang.classList.remove("show");
+  }
+}
 
 $.i18n = function (options) {
   options = $.extend(
@@ -32,94 +32,101 @@ $.i18n = function (options) {
 };
 
 $.i18n.tr = {
-    lang_i: "TR",
+  news_link: "HABERLER",
+  lang_i: "TR",
   etkinlikler: "Etkinlikler",
-galeri: "Galeri",
-hakkımızda: "Hakkımızda",
-iletişim: "İletişim",
-your_browser: "Tarayıcınız video etiketini desteklemiyor.",
-rezervasyon: "Rezervasyon",
-rezervasyon_p: " Ayrıcalıklı bir deneyim yaşamak ister misiniz? Hemen rezervasyon yapın.",
-etkin_sec: "Etkinlik Seçiniz",
-e_posta: "E-Posta Adresi:",
-isim: "İsim",
-soyisim: "Soyisim",
-telefon: "Telefon numarasi",
-kadin: "Kadın Sayısı",
-erkek: "Erkek Sayısı",
-ozel_m: "Özel Mesajınız (Şişeli Bistro, Doğum Günü vb.)",
-talebi_gonder: "Talebi Gönder",
+  galeri: "Galeri",
+  hakkımızda: "Hakkımızda",
+  iletişim: "İletişim",
+  your_browser: "Tarayıcınız video etiketini desteklemiyor.",
+  rezervasyon: "Rezervasyon",
+  rezervasyon_p:
+    " Ayrıcalıklı bir deneyim yaşamak ister misiniz? Hemen rezervasyon yapın.",
+  etkin_sec: "Etkinlik Seçiniz",
+  e_posta: "E-Posta Adresi:",
+  isim: "İsim",
+  soyisim: "Soyisim",
+  telefon: "Telefon numarasi",
+  kadin: "Kadın Sayısı",
+  erkek: "Erkek Sayısı",
+  ozel_m: "Özel Mesajınız (Şişeli Bistro, Doğum Günü vb.)",
+  talebi_gonder: "Talebi Gönder",
 
-
-t_footer: "La Nouba &copy; 2023 - tüm hakları saklıdır - <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a> tarafından oluşturulmuştur.",
-
-
-
-
+  t_footer:
+    "La Nouba &copy; 2023 - tüm hakları saklıdır - <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a> tarafından oluşturulmuştur.",
 };
 
 $.i18n.en = {
-    lang_i: "EN",
+  news_link: "NEWS",
+  lang_i: "EN",
   etkinlikler: "Events",
-galeri: "Gallery",
-hakkımızda: "About us",
-iletişim: "Contact",
-your_browser: "Your browser does not support the video tag.",
-rezervasyon: "Reservation",
-rezervasyon_p: "Would you like to experience a privileged experience? Make a reservation now.",
-etkin_sec: "Choose an Event",
-e_posta: "Email Address:",
-isim: "Name",
-soyisim: "Surname",
-telefon: "Phone Number",
-kadin: "Number of Females",
-erkek: "Number of Males",
-ozel_m: "Your Special Message (Bottled Bistro, Birthday, etc.)",
-talebi_gonder: "Send Request",
-t_footer: "La Nouba © 2023 - All rights reserved - by <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a>",
+  galeri: "Gallery",
+  hakkımızda: "About us",
+  iletişim: "Contact",
+  your_browser: "Your browser does not support the video tag.",
+  rezervasyon: "Reservation",
+  rezervasyon_p:
+    "Would you like to experience a privileged experience? Make a reservation now.",
+  etkin_sec: "Choose an Event",
+  e_posta: "Email Address:",
+  isim: "Name",
+  soyisim: "Surname",
+  telefon: "Phone Number",
+  kadin: "Number of Females",
+  erkek: "Number of Males",
+  ozel_m: "Your Special Message (Bottled Bistro, Birthday, etc.)",
+  talebi_gonder: "Send Request",
+  t_footer:
+    "La Nouba © 2023 - All rights reserved - by <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a>",
 };
 
 $.i18n.ru = {
-    lang_i: "RU",
+  news_link: "НОВОСТИ",
+  lang_i: "RU",
   etkinlikler: "Мероприятия",
-galeri: "Галерея",
-hakkımızda: "О нас",
-iletişim: "Контакт",
-your_browser: "Ваш браузер не поддерживает тег видео.",
-rezervasyon: "Бронирование",
-rezervasyon_p: "Хотите ли вы испытать привилегированный опыт? Забронируйте сейчас.",
-etkin_sec: "Выберите событие",
-e_posta: "Адрес электронной почты:",
-isim: "Имя",
-soyisim: "Фамилия",
-telefon: "Номер телефона",
-kadin: "Количество женщин",
-erkek: "Количество мужчин",
-ozel_m: "Ваше особое сообщение (Bistro в бутылке, день рождения и т. д.)",
-talebi_gonder: "Отправить запрос",
-t_footer: "La Nouba © 2023 - все права защищены - <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a>",
+  galeri: "Галерея",
+  hakkımızda: "О нас",
+  iletişim: "Контакт",
+  your_browser: "Ваш браузер не поддерживает тег видео.",
+  rezervasyon: "Бронирование",
+  rezervasyon_p:
+    "Хотите ли вы испытать привилегированный опыт? Забронируйте сейчас.",
+  etkin_sec: "Выберите событие",
+  e_posta: "Адрес электронной почты:",
+  isim: "Имя",
+  soyisim: "Фамилия",
+  telefon: "Номер телефона",
+  kadin: "Количество женщин",
+  erkek: "Количество мужчин",
+  ozel_m: "Ваше особое сообщение (Bistro в бутылке, день рождения и т. д.)",
+  talebi_gonder: "Отправить запрос",
+  t_footer:
+    "La Nouba © 2023 - все права защищены - <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a>",
 };
 $.i18n.ua = {
+  news_link: "НОВИНИ",
   lang_i: "UA",
   etkinlikler: "Події",
-galeri: "Галерея",
-hakkımızda: "Про нас",
-iletişim: "Контакти",
-your_browser: "Ваш браузер не підтримує тег відео.",
-rezervasyon: "Бронювання",
-rezervasyon_p: "Чи хочете ви насолодитися привілейованим досвідом? Зробіть бронювання зараз.",
-etkin_sec: "Оберіть Подію",
-e_posta: "Адреса електронної пошти:",
-isim: "Ім'я",
-soyisim: "Прізвище",
-telefon: "Номер телефону",
-kadin: "Кількість жінок",
-erkek: "Кількість чоловіків",
-ozel_m: "Ваш спеціальний повідомлення (Bottled Bistro, День народження та інше)",
-talebi_gonder: "Надіслати запит",
-t_footer: "La Nouba © 2023 - Усі права захищено - від <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a>",
+  galeri: "Галерея",
+  hakkımızda: "Про нас",
+  iletişim: "Контакти",
+  your_browser: "Ваш браузер не підтримує тег відео.",
+  rezervasyon: "Бронювання",
+  rezervasyon_p:
+    "Чи хочете ви насолодитися привілейованим досвідом? Зробіть бронювання зараз.",
+  etkin_sec: "Оберіть Подію",
+  e_posta: "Адреса електронної пошти:",
+  isim: "Ім'я",
+  soyisim: "Прізвище",
+  telefon: "Номер телефону",
+  kadin: "Кількість жінок",
+  erkek: "Кількість чоловіків",
+  ozel_m:
+    "Ваш спеціальний повідомлення (Bottled Bistro, День народження та інше)",
+  talebi_gonder: "Надіслати запит",
+  t_footer:
+    "La Nouba © 2023 - Усі права захищено - від <a href='https://cypruscodes.com/' target='_blank'>CyprusCodes</a>",
 };
-
 
 var i18n = $.i18n();
 
@@ -148,19 +155,17 @@ function setContactFormPlaceholders(lang) {
     $('textarea[name="mesaj"]').attr("placeholder", "сообщение");
   } else if (lang === "ua") {
     $('input[name="name"]').attr("placeholder", "приклад@приклад.com");
-$('input[name="isim"]').attr("placeholder", "Ім'я");
-$('input[name="soyisim"]').attr("placeholder", "Прізвище");
-$('input[name="phone"]').attr("placeholder", "Номер телефону");
-$('textarea[name="mesaj"]').attr("placeholder", "повідомлення");
-  }
-  else if (lang === "en") {
+    $('input[name="isim"]').attr("placeholder", "Ім'я");
+    $('input[name="soyisim"]').attr("placeholder", "Прізвище");
+    $('input[name="phone"]').attr("placeholder", "Номер телефону");
+    $('textarea[name="mesaj"]').attr("placeholder", "повідомлення");
+  } else if (lang === "en") {
     $('input[name="name"]').attr("placeholder", "example@exmple.com");
     $('input[name="isim"]').attr("placeholder", "Name");
     $('input[name="soyisim"]').attr("placeholder", "Full Name");
     $('input[name="phone"]').attr("placeholder", "Phone Number");
     $('textarea[name="mesaj"]').attr("placeholder", "Message");
-  } 
-  else {
+  } else {
     $('input[name="name"]').attr("placeholder", "example@exmple.com");
     $('input[name="isim"]').attr("placeholder", "İsim");
     $('input[name="soyisim"]').attr("placeholder", "Soyisim");

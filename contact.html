@@ -701,16 +701,20 @@
               >Galeri</a
             >
           </li>
-        </ul>
-      </div>
-      <div id="navbarNavDropdown" class="menu-main-right-container">
-        <ul id="main-menu" class="navbar-nav">
           <li
             id="menu-item-289"
             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"
           >
             <a rel="noopener" href="about.html" data-translate="hakkımızda"
               >Hakkımızda</a
+            >
+          </li>
+          <li
+            id="menu-item-289"
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"
+          >
+            <a rel="noopener" href="news.html" data-translate="news_link"
+              >News</a
             >
           </li>
           <li
@@ -789,9 +793,50 @@
               <li
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"
               >
-                <a rel="noopener" href="about.html" data-translate="hakkımızda"
-                  >Hakkımızda</a
-                >
+                <div class="dropdown droplang language_button">
+                  <div
+                    class="btn dropdown-toggle"
+                    type="button"
+                    id=""
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    onclick="toogleAbout()"
+                    data-translate="hakkımızda"
+                    style="
+                      text-transform: uppercase;
+                      font-family: 'Roboto', sans-serif !important;
+                      font-size: 14px;
+                    "
+                  >
+                    ABOUT
+                  </div>
+                  <div
+                    style="position: fixed; top: 5rem"
+                    class="dropdown-menu dropdown-container"
+                    aria-labelledby="dropdownMenuButton"
+                    id="more-about"
+                  >
+                    <a
+                      class="dropdown-item dropdown-text"
+                      href="/about.html"
+                      data-translate="hakkımızda"
+                      >About</a
+                    >
+                    <a
+                      class="dropdown-item dropdown-text"
+                      href="/news.html"
+                      data-translate="news_link"
+                      >News</a
+                    >
+                  </div>
+                </div>
+
+                <script>
+                  function toogleAbout() {
+                    var dropdownMenu = document.getElementById("more-about");
+                    dropdownMenu.classList.toggle("show");
+                  }
+                </script>
               </li>
               <li
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"
@@ -938,6 +983,15 @@
           </div>
         </div>
       </header>
+      <a
+        href="https://api.whatsapp.com/send?phone=+90(539)1051515&text=Merhaba !"
+        id="whtsp"
+      >
+        <img
+          src="https://static-00.iconduck.com/assets.00/whatsapp-icon-2048x2048-dumosfvo.png"
+          alt=""
+        />
+      </a>
 
       <section class="zones_section_1">
         <div class="section__header">

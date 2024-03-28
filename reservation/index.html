@@ -668,35 +668,54 @@
       </span>
     </a>
 
+    <a
+      href="https://api.whatsapp.com/send?phone=+90(539)1051515&text=Merhaba !"
+      id="whtsp"
+    >
+      <img
+        src="https://static-00.iconduck.com/assets.00/whatsapp-icon-2048x2048-dumosfvo.png"
+        alt=""
+      />
+    </a>
     <!-- <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div> -->
 
     <div id="menu">
-      
       <div id="navbarNavDropdown" class="menu-main-left-container">
         <ul id="main-menu" class="navbar-nav">
           <li
             id="menu-item-190"
             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"
           >
-            <a href="../index.html#events" data-translate="etkinlikler">Etkinlikler</a>
+            <a href="../index.html#events" data-translate="etkinlikler"
+              >Etkinlikler</a
+            >
           </li>
           <li
             id="menu-item-290"
             class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-290"
           >
-            <a href="../gallery.html" aria-current="page" data-translate="galeri">Galeri</a>
+            <a
+              href="../gallery.html"
+              aria-current="page"
+              data-translate="galeri"
+              >Galeri</a
+            >
           </li>
-        </ul>
-      </div>
-      <div id="navbarNavDropdown" class="menu-main-right-container">
-        <ul id="main-menu" class="navbar-nav">
           <li
             id="menu-item-289"
             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"
           >
-            <a rel="noopener" href="about.html" data-translate="hakkımızda"
+            <a rel="noopener" href="../about.html" data-translate="hakkımızda"
               >Hakkımızda</a
+            >
+          </li>
+          <li
+            id="menu-item-289"
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"
+          >
+            <a rel="noopener" href="../news.html" data-translate="news_link"
+              >News</a
             >
           </li>
           <li
@@ -707,7 +726,6 @@
           </li>
         </ul>
       </div>
-      
     </div>
 
     <div id="loader" class="loader test">
@@ -722,7 +740,7 @@
               alt=""
               data-src="../wp-content//uploads/2022/09/Logo.png"
               class="lazy lazyload w-100 h-75 mb-2"
-              src="../wp-content//uploads/2022/09/Logo.png"
+              src="../assets/llogo.png"
             />
           </div>
           <div class="text">
@@ -744,7 +762,8 @@
               class="btn dropdown-toggle"
               style="color: #fff !important"
               id="dropdownMenuButton"
-              onclick="toggledLangBtn()" data-translate="lang_i"
+              onclick="toggledLangBtn()"
+              data-translate="lang_i"
             >
               TR
             </button>
@@ -760,7 +779,10 @@
               <li
                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-190"
               >
-                <a href="../index.html#events" aria-current="page" data-translate="etkinlikler"
+                <a
+                  href="../index.html#events"
+                  aria-current="page"
+                  data-translate="etkinlikler"
                   >Etkinlikler</a
                 >
               </li>
@@ -778,11 +800,8 @@
               ><img
                 alt=""
                 class="lazy lazyload"
-                src="../wp-content//uploads/2022/09/Logo.png" /><noscript
-                ><img
-                  class="lazy"
-                  src="../wp-content//uploads/2022/09/Logo.png"
-                  alt="" /></noscript
+                src="../assets/llogo.png" /><noscript
+                ><img class="lazy" src="../assets/llogo.png" alt="" /></noscript
             ></a>
           </div>
         </div>
@@ -792,9 +811,49 @@
               <li
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289"
               >
-                <a rel="noopener" href="about.html" data-translate="hakkımızda"
-                  >Hakkımızda</a
-                >
+                <div class="dropdown droplang">
+                  <div
+                    type="button"
+                    id=""
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    onclick="toogleAbout()"
+                    data-translate="hakkımızda"
+                    style="
+                      text-transform: uppercase;
+                      font-family: 'Roboto', sans-serif !important;
+                      font-size: 14px;
+                      color: white !important;
+                    "
+                  >
+                    ABOUT
+                  </div>
+                  <div
+                    style="position: fixed; top: 5rem"
+                    class="dropdown-menu dropdown-container"
+                    aria-labelledby="dropdownMenuButton"
+                    id="more-about"
+                  >
+                    <a
+                      class="dropdown-item dropdown-text"
+                      href="../about.html"
+                      data-translate="hakkımızda"
+                      >About</a
+                    >
+                    <a
+                      class="dropdown-item dropdown-text"
+                      href="../news.html"
+                      data-translate="news_link"
+                      >News</a
+                    >
+                  </div>
+                </div>
+                <script>
+                  function toogleAbout() {
+                    var dropdownMenu = document.getElementById("more-about");
+                    dropdownMenu.classList.toggle("show");
+                  }
+                </script>
               </li>
               <li
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-192"
@@ -825,7 +884,9 @@
           <div class="cover__inner veil_cover">
             <div id="mobile_hidden" class="section__header">
               <div class="title">
-                <h1 id="mobile_font_size" data-translate="rezervasyon">rezervasyon</h1>
+                <h1 id="mobile_font_size" data-translate="rezervasyon">
+                  rezervasyon
+                </h1>
               </div>
             </div>
             <div class="blurbs">
@@ -919,7 +980,9 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <span class="form-label" data-translate="etkin_sec">Etkinlik Seçiniz:</span>
+                          <span class="form-label" data-translate="etkin_sec"
+                            >Etkinlik Seçiniz:</span
+                          >
                           <select class="form-control">
                             <option value="TION WAYNE | 21TH AUGUST 2022 |">
                               TION WAYNE | 21TH AUGUST 2022 |
@@ -936,7 +999,9 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <span class="form-label" data-translate="e_posta">E-Posta Adresi:</span>
+                          <span class="form-label" data-translate="e_posta"
+                            >E-Posta Adresi:</span
+                          >
                           <input
                             class="form-control"
                             type="email"
@@ -950,7 +1015,9 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <span class="form-label" data-translate="isim">İsim</span>
+                          <span class="form-label" data-translate="isim"
+                            >İsim</span
+                          >
                           <input
                             class="form-control"
                             type="text"
@@ -962,7 +1029,9 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <span class="form-label" data-translate="soyisim">Soyisim</span>
+                          <span class="form-label" data-translate="soyisim"
+                            >Soyisim</span
+                          >
                           <input
                             class="form-control"
                             name="soyisim"
@@ -974,7 +1043,9 @@
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
-                          <span class="form-label" data-translate="telefon">Telefon Numarası</span>
+                          <span class="form-label" data-translate="telefon"
+                            >Telefon Numarası</span
+                          >
                           <input
                             class="form-control"
                             name="phone"
@@ -987,7 +1058,9 @@
 
                       <div class="col-md-4">
                         <div class="form-group">
-                          <span class="form-label" data-translate="kadin">Kadın Sayısı</span>
+                          <span class="form-label" data-translate="kadin"
+                            >Kadın Sayısı</span
+                          >
                           <select class="form-control" name="kadin">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -1006,7 +1079,9 @@
 
                       <div class="col-md-4">
                         <div class="form-group">
-                          <span class="form-label" data-translate="erkek">Erkek Sayısı</span>
+                          <span class="form-label" data-translate="erkek"
+                            >Erkek Sayısı</span
+                          >
                           <select class="form-control" name="erkek">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -1038,7 +1113,13 @@
                     <div class="row">
                       <div class="col-md-3">
                         <div class="form-btn">
-                          <button class="submit-btn" data-translate="talebi_gonder">Talebi Gönder</button>
+                          <button
+                            style="background-color: #d3aa7a"
+                            class="submit-btn"
+                            data-translate="talebi_gonder"
+                          >
+                            Talebi Gönder
+                          </button>
                         </div>
                       </div>
                     </div>
